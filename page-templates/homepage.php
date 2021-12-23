@@ -431,7 +431,7 @@ get_header();
                         <div class="form-check">
                             <input type="checkbox" name="accept" id="accept" required>
                             <span class="checkmark"></span>
-                            <label class="check-container"> <?= __('Please keep me informed of any new developments in the new building project CORNELIS.', 'cornelis') ?>
+                            <label class="check-container"> <?= __('Please keep me informed of any new developments in the new building project Cornelis.', 'cornelis') ?>
                             </label>
                         </div>
                         <div class="g-recaptcha mb-4" data-sitekey="6Ldk_4gdAAAAAIp82Gd3o18w7DmdRv859GfozCgs"></div>

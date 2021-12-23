@@ -13,573 +13,439 @@ defined('ABSPATH') || exit;
 get_header();
 ?>
 
-    <section id="thebridge">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-8 column_left header_left">
-                    <?= !empty($img = get_field('afbeelding')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'header_image_left']) : '' ?>
-                    <svg class="logo" viewBox="0 0 243 397" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <title>logo-large</title>
-                        <g id="Onepager" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Desktop-the-bridge-v2" transform="translate(-99.000000, -458.000000)" fill="#FFFFFF">
-                                <g id="HERO" transform="translate(0.000000, 128.000000)">
-                                    <g id="Group" transform="translate(99.000000, 330.000000)">
-                                        <path d="M31.1639224,343.287723 L27.0635107,343.287723 L27.0635107,366.361267 L31.1639224,366.361267 L31.1639224,357.317118 L57.1583358,357.317118 L57.1583358,352.333201 L31.1639224,352.333201 L31.1639224,343.287723 Z M57.1583358,305.998716 L27.0635107,305.998716 L27.0635107,310.983963 L39.9138489,310.983963 L39.9138489,324.319597 L27.0635107,324.319597 L27.0635107,329.303514 L57.1583358,329.303514 L57.1583358,324.319597 L44.0142605,324.319597 L44.0142605,310.983963 L57.1583358,310.983963 L57.1583358,305.998716 Z M57.1583358,268.11031 L53.0592473,268.11031 L53.0592473,284.12397 L44.0142605,284.12397 L44.0142605,270.462719 L39.9561894,270.462719 L39.9561894,284.12397 L31.1639224,284.12397 L31.1639224,268.11031 L27.0635107,268.11031 L27.0635107,289.109216 L57.1583358,289.109216 L57.1583358,268.11031 Z M48.6637754,210.377938 C44.858424,210.377938 42.6183475,212.778193 41.6881799,215.315339 C40.886357,213.101151 38.5615995,210.885633 35.3053514,210.885633 C30.2337548,210.885633 27.0635107,214.71594 27.0635107,220.806952 L27.0635107,233.591033 L57.1583358,233.591033 L57.1583358,220.299257 C57.1583358,214.486015 54.1997942,210.377938 48.6637754,210.377938 L48.6637754,210.377938 Z M48.4520729,215.361856 C51.1155542,215.361856 53.0592473,217.300932 53.0592473,220.761764 L53.0592473,228.608444 L43.887239,228.608444 L43.887239,220.761764 C43.887239,217.300932 45.7885916,215.361856 48.4520729,215.361856 L48.4520729,215.361856 Z M35.4747133,215.869551 C38.2652161,215.869551 39.7868274,218.038552 39.7868274,221.222943 L39.7868274,228.608444 L31.1639224,228.608444 L31.1639224,221.222943 C31.1639224,218.038552 32.6855337,215.869551 35.4747133,215.869551 L35.4747133,215.869551 Z M57.1583358,170.736523 L43.8448986,178.304103 C42.914731,174.612017 40.1678918,171.750584 35.8557777,171.750584 C30.7405175,171.750584 27.0635107,175.72044 27.0635107,181.949673 L27.0635107,194.687237 L57.1583358,194.687237 L57.1583358,189.70199 L44.4786827,189.70199 L44.4786827,183.474087 L57.1583358,176.551093 L57.1583358,170.736523 Z M35.8981182,176.734501 C38.8566598,176.734501 40.5886504,178.996535 40.5886504,182.319147 L40.5886504,189.70199 L31.1639224,189.70199 L31.1639224,182.319147 C31.1639224,178.996535 32.9395766,176.734501 35.8981182,176.734501 L35.8981182,176.734501 Z M27.0635107,156.152915 L57.1583358,156.152915 L57.1583358,151.168998 L27.0635107,151.168998 L27.0635107,156.152915 Z M41.8998824,110.926854 C37.546751,110.926854 33.151279,110.6956 29.8950309,114.249466 C27.9936783,116.326763 27.0635107,119.325087 27.0635107,122.740732 L27.0635107,134.278169 L57.1583358,134.278169 L57.1583358,122.740732 C57.1583358,119.325087 56.2294913,116.326763 54.3268156,114.249466 C51.0732138,110.6956 46.2530138,110.926854 41.8998824,110.926854 L41.8998824,110.926854 Z M41.8998824,115.910772 C46.0413114,115.910772 49.2975595,115.955959 51.0295501,117.663782 C52.4254631,119.048646 53.0592473,120.894689 53.0592473,123.248427 L53.0592473,129.294252 L31.1639224,129.294252 L31.1639224,123.248427 C31.1639224,120.894689 31.7977066,119.048646 33.1922964,117.663782 C34.9269333,115.955959 37.7584534,115.910772 41.8998824,115.910772 L41.8998824,115.910772 Z M45.4935313,72.6237864 L40.886357,72.6237864 L40.886357,84.6224018 L44.7750662,84.6224018 L44.7750662,77.6077039 L46.4647163,77.6077039 C48.4097324,77.6077039 49.9313437,78.0688824 51.1989121,79.2690098 C52.5511614,80.5608412 53.3119671,82.4520718 53.3119671,84.6224018 C53.3119671,86.5601489 52.6358424,88.3131588 51.4939724,89.4680987 C49.8890032,91.082888 48.1556895,91.4523624 42.1115848,91.4523624 C36.0674802,91.4523624 34.3765069,91.082888 32.7702146,89.4680987 C31.6283446,88.3131588 30.9098794,86.5601489 30.9098794,84.6224018 C30.9098794,80.9303156 32.8535725,78.530061 36.1521611,77.699408 L36.1521611,72.6689739 C30.9945604,73.59266 26.8107909,77.6542205 26.8107909,84.6224018 C26.8107909,88.1297507 27.9513378,90.9911839 30.0220523,93.2518889 C32.9819171,96.4814674 36.3215231,96.4363134 42.1115848,96.4363134 C47.9029697,96.4363134 51.2412526,96.4814674 54.1997942,93.2518889 C56.2705087,90.9911839 57.4137019,88.0367175 57.4137019,84.6224018 C57.4137019,81.1602404 56.3988533,78.0688824 53.9880917,75.5755946 C51.8750368,73.4079228 49.3809174,72.6237864 45.4935313,72.6237864 L45.4935313,72.6237864 Z M57.1583358,35.9806955 L53.0592473,35.9806955 L53.0592473,51.9956839 L44.0142605,51.9956839 L44.0142605,38.3344337 L39.9561894,38.3344337 L39.9561894,51.9956839 L31.1639224,51.9956839 L31.1639224,35.9806955 L27.0635107,35.9806955 L27.0635107,56.9796015 L57.1583358,56.9796015 L57.1583358,35.9806955 Z"
-                                              id="Fill-2"></path>
-                                        <path d="M210.343575,33.918284 C227.773302,51.8564 235.309909,78.8134133 232.736401,114.007845 L232.724493,114.298906 C232.720523,114.491618 232.324904,133.740172 222.336519,153.019294 C209.206998,178.364176 186.295501,191.96429 154.231844,193.444846 C152.949721,193.444846 151.703323,193.444846 150.456924,193.446175 C149.874743,193.43953 149.387827,193.442188 148.968392,193.446175 C138.790797,193.448833 129.878124,193.459465 122.096736,193.476743 L84.245663,193.476743 L84.245663,9.78549071 L147.757718,9.78549071 L147.99456,9.77884549 C148.36504,9.76156791 185.405028,8.25177315 210.343575,33.918284 L210.343575,33.918284 Z M210.477213,227.444467 C227.859306,245.385241 235.368127,272.309028 232.801235,307.448969 L232.788004,307.746676 C232.78668,307.9354 232.44531,326.875616 222.553514,346.15208 C209.446486,371.694989 186.468833,385.400098 154.250368,386.887299 C130.342546,386.887299 106.064246,386.928499 84.245663,386.984319 L84.245663,203.437933 C89.9655984,203.363506 100.997942,203.273131 122.157601,203.227944 L147.773596,203.227944 L148.005146,203.222628 C148.378271,203.203815 185.6207,201.787259 210.477213,227.444467 L210.477213,227.444467 Z M9.7396354,9.78549071 L74.537783,9.78549071 L74.537783,387.009571 C43.7655101,387.095959 19.1947956,387.203612 9.70920318,387.24747 L9.7396354,9.78549071 Z M147.649221,0.0356189453 L5.07821229,0.0356189453 L5.07821229,0.0356189453 L0.0330785063,0.0356189453 L0,397 L9.70920318,397 C10.4660394,396.992026 82.0426345,396.6385 154.361511,396.6385 L154.579829,396.633184 C199.421053,394.601074 220.985592,370.489546 231.183034,350.618999 C241.729785,330.065323 242.445604,310.17484 242.490591,308.028433 C242.830638,303.347538 243,298.803534 243,294.38446 C243,262.898063 234.399588,238.106063 217.357542,220.564003 C206.29212,209.175419 193.324022,202.55146 181.581153,198.703876 C208.556013,190.437218 223.244193,172.541631 231.124816,157.176546 C241.666275,136.62287 242.38077,116.736374 242.42708,114.587309 C242.765804,109.907743 242.935166,105.359752 242.935166,100.942007 C242.935166,69.4449773 234.333431,44.6489907 217.290062,27.10693 C189.836225,-1.14855986 150.659365,-0.0906402993 147.649221,0.0356189453 L147.649221,0.0356189453 Z"
-                                              id="Fill-4"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div class="col-sm-12 col-lg-6 column_right header_right offset-lg-6">
-                    <div class="content">
-                        <?php if ($header_content = get_field('header_content')) : ?>
-                            <?php echo $header_content; ?>
-                        <?php endif; ?>
-                    </div>
-                </div>
+
+    <section id="header">
+        <div class="container h-100">
+            <div class="row position-relative" data-aos="fade-up">
+                <img class="leaf_background"
+                     src="<?php echo get_template_directory_uri(); ?>/assets/images/leaf-rounded.png"
+                     alt="Leaf">
             </div>
-        </div>
-    </section>
-
-    <section id="wonen">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-6 column_left"
-                     style="background-image: url(<?php echo esc_url(get_field('w_img_left')); ?>)">
-                    <div class="content">
-                        <?php if ($tekst_over_afbeelding = get_field('tekst_over_afbeelding')) : ?>
-                            <h2><?php echo esc_html($tekst_over_afbeelding); ?></h2>
+            <div class="row h-100">
+                <div class="col-sm-12 col-lg-5 column_left d-flex align-items-center px-lg-0">
+                    <div class="content" data-aos="fade-up">
+                        <?php if ($content = get_field('header_text')) : ?>
+                            <?php echo $content; ?>
                         <?php endif; ?>
-                    </div>
-                </div>
-                <div class="offset-lg-6"></div>
-                <div class="col-sm-12 col-lg-8 column_right d-none d-md-block"
-                     style="background-image: url(<?php echo esc_url(get_field('w_img_right')); ?>)">
-                </div>
-                <div class="row after_images">
-                    <div class="col-sm-12 col-lg-6">
-                        <h3>
-                            <?php if ($title_under = get_field('title_under')) : ?>
-                                <?php echo esc_html($title_under); ?>
-                            <?php endif; ?>
-                        </h3>
-                    </div>
-                    <div class="col-sm-12 col-lg-6 appartments">
-                        <p>
-                            <?php if ($text_under = get_field('text_under')) : ?>
-                                <?php echo $text_under; ?>
-                            <?php endif; ?>
-                        </p>
-                    </div>
-                    <div class="col-sm-12 column_right d-block d-md-none"
-                         style="background-image: url(<?php echo esc_url(get_field('w_img_right')); ?>)">
-                    </div>
-                </div>
-                <div class="row wonen_content">
-                    <div class="col-sm-12">
-                        <?php if ($wonen_content = get_field('wonen_content')) : ?>
-                            <?php echo $wonen_content; ?>
-                        <?php endif; ?>
-
                         <?php
-                        $link = get_field('w_button_link');
-                        if ($link) : ?>
-                            <a class="btn btn_green"
-                               href="<?php echo esc_url($link); ?>"><?php the_field('w_button_text'); ?></a>
+                        $link = get_field('header_button_link');
+                        if ($link) :
+                            $link_url = $link['url'];
+                            $link_title = $link['title'];
+                            $link_target = $link['target'] ? $link['target'] : '_self';
+                            ?>
+                            <a class="btn btn_gray" href="<?php echo esc_url($link_url); ?>"
+                               target="<?php echo esc_attr($link_target); ?>"><?php the_field('header_button_tekst'); ?>
+                                <i class="fal fa-long-arrow-right"></i></a>
                         <?php endif; ?>
                     </div>
 
+                </div>
+                <div class="col-sm-12 col-lg-7 column_right px-0" data-aos="fade-left">
+                    <video class="header_image" muted autoplay loop>
+                        <source src="<?php echo get_template_directory_uri(); ?>/assets/video/cornelis_header_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <img class="wood"
+                         src="<?php echo get_template_directory_uri(); ?>/assets/images/wood.jpg"
+                         alt="Wood">
+                    <img class="leaf"
+                         src="<?php echo get_template_directory_uri(); ?>/assets/images/blad.jpg"
+                         alt="Leafs">
+                    <div class="d-none">
+                        <?php if (have_rows('header_slider')) : ?>
+                            <div class="header_slider">
+                                <?php while (have_rows('header_slider')) :
+                                    the_row(); ?>
+
+                                    <div class="slide">
+                                        <?= !empty($img = get_sub_field('slide_img')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'class_name']) : '' ?>
+
+                                    </div>
+
+                                <?php endwhile; ?>
+                            </div>
+                        <?php endif; ?>
+                        <div class="arrow">
+                            <a class="next_header_slide"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                        <img class="wood"
+                             src="<?php echo get_template_directory_uri(); ?>/assets/images/wood.jpg"
+                             alt="Wood">
+                        <img class="leaf"
+                             src="<?php echo get_template_directory_uri(); ?>/assets/images/blad.jpg"
+                             alt="Leafs">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="kantoor">
+    <section id="unique">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-lg-6 column_left"
-                     style="background-image: url(<?php echo esc_url(get_field('k_img_left')); ?>)">
-
-                </div>
-                <div class="col-sm-12 col-lg-6 column_left_text">
-                    <div class="content">
-                        <?php if ($k_text_over_img = get_field('k_text_over_img')) : ?>
-                            <h2><?php echo esc_html($k_text_over_img); ?></h2>
-                        <?php endif; ?>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-6 column_right d-none d-md-block"
-                     style="background-image: url(<?php echo esc_url(get_field('k_img_right')); ?>)">
-                </div>
-            </div>
-            <div class="row after_images">
-                <div class="col-sm-12 col-lg-6">
-                    <h3>
-                        <?php if ($title_under = get_field('k_title_under')) : ?>
-                            <?php echo esc_html($title_under); ?>
-                        <?php endif; ?>
-                    </h3>
-                </div>
-                <div class="col-sm-12 col-lg-6 appartments">
-                    <p>
-                        <?php if ($text_under = get_field('k_text_under')) : ?>
-                            <?php echo $text_under; ?>
-                        <?php endif; ?>
-                    </p>
-                </div>
-                <div class="col-sm-12 column_right d-block none d-md-none"
-                     style="background-image: url(<?php echo esc_url(get_field('k_img_right')); ?>)">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 under_content">
-                    <?php if ($kantoor_content = get_field('kantoor_content')) : ?>
-                        <?php echo $kantoor_content; ?>
+                <div class="col-sm-12 mb-4 mb-lg-3 pl-lg-0">
+                    <?php if ($u_title = get_field('u_title')) : ?>
+                        <h2><?php echo esc_html($u_title); ?></h2>
                     <?php endif; ?>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-5 mb-lg-0 blocks pl-lg-0" data-aos="fade-up">
+                    <?php if (have_rows('kolom_1')) : ?>
+                        <?php while (have_rows('kolom_1')) :
+                            the_row(); ?>
 
-                    <?php
-                    $link = get_field('k_button_link');
-                    if ($link) : ?>
-                        <a class="btn btn_brown"
-                           href="<?php echo esc_url($link); ?>"><?php the_field('k_button_text'); ?></a>
+                            <?php if ($boven = get_sub_field('boven')) : ?>
+                            <p class="up"><?php echo esc_html($boven); ?></p>
+                        <?php endif; ?>
+
+                            <?php if ($midden = get_sub_field('midden')) : ?>
+                            <p class="middle"><?php echo esc_html($midden); ?></p>
+                        <?php endif; ?>
+
+                            <?php if ($onder = get_sub_field('onder')) : ?>
+                            <p class="bottom"><?php echo esc_html($onder); ?></p>
+                        <?php endif; ?>
+
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-5 mb-lg-0 blocks" data-aos="fade-up" data-aos-delay="300">
+                    <?php if (have_rows('kolom_2')) : ?>
+                        <?php while (have_rows('kolom_2')) :
+                            the_row(); ?>
+
+                            <?php if ($boven = get_sub_field('boven')) : ?>
+                            <p class="up"><?php echo esc_html($boven); ?></p>
+                        <?php endif; ?>
+
+                            <?php if ($midden = get_sub_field('midden')) : ?>
+                            <p class="middle"><?php echo esc_html($midden); ?></p>
+                        <?php endif; ?>
+
+                            <?php if ($onder = get_sub_field('onder')) : ?>
+                            <p class="bottom"><?php echo esc_html($onder); ?></p>
+                        <?php endif; ?>
+
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-5 mb-lg-0 blocks" data-aos="fade-up" data-aos-delay="600">
+                    <?php if (have_rows('kolom_3')) : ?>
+                        <?php while (have_rows('kolom_3')) :
+                            the_row(); ?>
+
+                            <?php if ($boven = get_sub_field('boven')) : ?>
+                            <p class="up"><?php echo esc_html($boven); ?></p>
+                        <?php endif; ?>
+
+                            <?php if ($midden = get_sub_field('midden')) : ?>
+                            <p class="middle"><?php echo esc_html($midden); ?></p>
+                        <?php endif; ?>
+
+                            <?php if ($onder = get_sub_field('onder')) : ?>
+                            <p class="bottom"><?php echo esc_html($onder); ?></p>
+                        <?php endif; ?>
+
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-5 mb-lg-0 blocks" data-aos="fade-up" data-aos-delay="900">
+                    <?php if (have_rows('kolom_4')) : ?>
+                        <?php while (have_rows('kolom_4')) :
+                            the_row(); ?>
+
+                            <?php if ($boven = get_sub_field('boven')) : ?>
+                            <p class="up"><?php echo esc_html($boven); ?></p>
+                        <?php endif; ?>
+
+                            <?php if ($midden = get_sub_field('midden')) : ?>
+                            <p class="middle"><?php echo esc_html($midden); ?></p>
+                        <?php endif; ?>
+
+                            <?php if ($onder = get_sub_field('onder')) : ?>
+                            <p class="bottom"><?php echo esc_html($onder); ?></p>
+                        <?php endif; ?>
+
+                        <?php endwhile; ?>
                     <?php endif; ?>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="appartementen">
+        <div class="container">
+            <div class="row first_row">
+                <div class="col-sm-12 col-lg-4 col_left pl-lg-0" data-aos="fade-down">
+                    <?php if ($a_titel = get_field('a_titel')) : ?>
+                        <?php echo $a_titel; ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col-sm-12 col-lg-6 offset-lg-2 col_right d-flex align-items-end pr-lg-0"
+                     data-aos="fade-left">
+                    <?php if ($a_content = get_field('a_content')) : ?>
+                        <?php echo $a_content; ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <div class="row second_row" data-aos="fade-up">
+                <div class="col-sm-12 col-md-5 col-lg-5 col_left"
+                     style="background-image:url(<?php echo esc_url(get_field('a_img_left')); ?>);">
+                    <img class="wood"
+                         src="<?php echo get_template_directory_uri(); ?>/assets/images/wood.jpg"
+                         alt="Wood">
+                </div>
+                <div class="col-sm-12 col-md-7 col-lg-7 col_right"
+                     style="background-image:url(<?php echo esc_url(get_field('a_img_right')); ?>);">
+                </div>
+            </div>
+            <div class="row third_row">
+                <div class="col-sm-12 px-0" data-aos="fade-up">
+                    <?php if ($a_content_2 = get_field('a_content_2')) : ?>
+                        <?php echo $a_content_2; ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gevelpark">
+        <div class="container">
+            <div class="row first_row">
+                <div class="col-sm-12 col-lg-6 col_left"
+                     style="background-image:url(<?php echo esc_url(get_field('g_img_left')); ?>);"
+                     data-aos="fade-right">
+
+                </div>
+                <div class="col-sm-12 col-lg-5 offset-lg-7 col_right" data-aos="fade-up">
+                    <?php if ($titel = get_field('titel')) : ?>
+                        <?php echo $titel; ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <div class="row second_row">
+                <div class="col-sm-12 col-lg-6 col_left" data-aos="fade-left">
+                    <?php if ($g_content_left = get_field('g_content_left')) : ?>
+                        <?php echo $g_content_left; ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col-sm-12 col-lg-5 offset-lg-1 col_right" data-aos="fade-up">
+                    <?= !empty($img = get_field('g_img_right')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'leaf_image']) : '' ?>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section id="voorzieningen">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-lg-6 column_left">
-                    <h2 class="text-center text-md-left"><?php the_field('v_title'); ?></h2>
-                    <?php if (have_rows('voorzieningen_slider')) : ?>
-                        <div class="voorzieningen_text_slider d-none d-md-block">
-                            <?php while (have_rows('voorzieningen_slider')) :
-                                the_row(); ?>
-                                <div>
-                                    <p class="title">
-                                        <?php if ($naam = get_sub_field('naam')) : ?>
-                                            <?php echo esc_html($naam); ?>
-                                        <?php endif; ?>
-                                    </p>
-                                </div>
-                            <?php endwhile; ?>
-                        </div>
+                <div class="col-sm-12 col-lg-4 col_left pl-lg-0" data-aos="fade-right">
+                    <?php if ($v_content = get_field('v_content')) : ?>
+                        <?php echo $v_content; ?>
                     <?php endif; ?>
-                    <div class="content d-none d-md-block">
-                        <?php if ($voorzieningen_content = get_field('voorzieningen_content')) : ?>
-                            <?php echo $voorzieningen_content; ?>
-                        <?php endif; ?>
-                    </div>
-                    <div class="arrows d-none d-md-block">
-                        <a class="prev_voorziening_slide"><i class="fal fa-angle-left"></i></a>
-                        <a class="next_voorziening_slide"><i class="fal fa-angle-right"></i></a>
-                    </div>
                 </div>
-                <div class="col-sm-12 col-lg-6 column_right px-0">
-                    <?php if (have_rows('voorzieningen_slider')) : ?>
-                    <div class="voorzieningen_slider">
-                        <?php while (have_rows('voorzieningen_slider')) :
-                            the_row(); ?>
-                        <div>
-                            <?= !empty($img = get_sub_field('slide_img')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'class_name']) : '' ?>
-                            <p class="title d-block d-md-none">
-                                <?php if ($naam = get_sub_field('naam')) : ?>
-                                    <?php echo esc_html($naam); ?>
-                                <?php endif; ?>
-                            </p>
-                        </div>
-                        <?php endwhile; ?>
-                        <?php endif; ?>
 
-                    </div>
-                    <div class="content d-block d-md-none">
-                        <?php if ($voorzieningen_content = get_field('voorzieningen_content')) : ?>
-                            <?php echo $voorzieningen_content; ?>
+                <div class="col-sm-12 col-lg-7 col_right" data-aos="fade-up">
+                    <div class="slide_box">
+                        <?php if (have_rows('voorzieningen_slider')) : ?>
+                            <div class="voorzieningen_slider">
+                                <?php while (have_rows('voorzieningen_slider')) :
+                                    the_row(); ?>
+
+                                    <?= !empty($img = get_sub_field('slide_img')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'slide_img']) : '' ?>
+
+                                <?php endwhile; ?>
+                            </div>
                         <?php endif; ?>
+                        <div class="arrows">
+                            <a class="prev_voorzieningen_slide"><i class="far fa-chevron-left"></i></a>
+                            <a class="next_voorzieningen_slide"><i class="far fa-chevron-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <section id="locatie">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-6 column_left">
-                    <?php if ($l_content_left = get_field('l_content_left')) : ?>
-                        <?php echo $l_content_left; ?>
-                    <?php endif; ?>
-                </div>
-                <div class="col-sm-12 col-lg-6 column_right">
-                    <div class="content">
-                        <?php if ($l_content_right = get_field('l_content_right')) : ?>
-                            <?php echo $l_content_right; ?>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <div class="container map_block">
-        <div class="row">
-            <div id="map"></div>
-
-            <div class="map_details">
+        <div class="wooden_background">
+            <div class="container">
                 <div class="row">
-
-                    <div class="col-sm-12 col-lg-3">
-                        <?php if (have_rows('map_details_train')) : ?>
-                            <?php while (have_rows('map_details_train')) :
-                                the_row(); ?>
-                                <div class="detail_block d-flex align-items-center">
-                                    <p class="detail"><?php the_sub_field('detail'); ?></p>
-                                    <img class="icon"
-                                         src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/ov.svg" alt="ov">
-                                </div>
-                            <?php endwhile; ?>
+                    <div class="col-sm-12 col-lg-5" data-aos="fade-right">
+                        <?php if ($l_content = get_field('l_content')) : ?>
+                            <?php echo $l_content; ?>
                         <?php endif; ?>
                     </div>
-                    <div class="offset-lg-1"></div>
-                    <div class="col-sm-12 col-lg-3">
-                        <?php if (have_rows('map_details_car')) : ?>
-                            <?php while (have_rows('map_details_car')) :
-                                the_row(); ?>
-                                <div class="detail_block d-flex align-items-center">
-                                    <p class="detail"><?php the_sub_field('detail'); ?></p>
-                                    <img class="icon"
-                                         src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/car.svg"
-                                         alt="car"></div>
-                            <?php endwhile; ?>
-                        <?php endif; ?>
-                    </div>
-                    <div class="offset-lg-1"></div>
-                    <div class="col-sm-12 col-lg-3">
-                        <?php if (have_rows('map_details_bike')) : ?>
-                            <?php while (have_rows('map_details_bike')) :
-                                the_row(); ?>
-                                <div class="detail_block d-flex align-items-center">
-                                    <p class="detail"><?php the_sub_field('detail'); ?></p>
-                                    <img class="icon"
-                                         src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/bike.svg"
-                                         alt="bike"></div>
-                            <?php endwhile; ?>
-                        <?php endif; ?>
-                    </div>
-
                 </div>
             </div>
         </div>
-    </div>
+        <div class="container maps_block" data-aos="fade-up">
+            <div class="row">
+                <div class="col-sm-12 col-lg-10 offset-lg-2">
+                    <a href="https://www.google.com/maps/dir//52.3577537,4.8404239/@52.35777,4.838927,16.55z/data=!4m2!4m1!3e0"
+                       target="_blank">
+                        <?= !empty($img = get_field('maps')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'maps']) : '' ?>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 position-relative" data-aos="fade-down">
+                <div class="locatie_slider">
+                    <?php if (have_rows('locatie_slider')) : ?>
+                        <?php while (have_rows('locatie_slider')) :
+                            the_row(); ?>
+                            <div class="slide">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                        <?= !empty($img = get_sub_field('slide')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'slide']) : '' ?>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-6 d-xl-flex justify-content-center ">
+                                        <div class="content">
+                                            <?php if ($content = get_sub_field('content')) : ?>
+                                                <?php echo $content; ?>
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+                <div class="arrows">
+                    <a class="prev_locatie_slide"><i class="far fa-chevron-left"></i></a>
+                    <a class="next_locatie_slide"><i class="far fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-    <section id="hotspots">
+    <section id="actueel">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 px-0 position-relative column_left">
-                    <h3 class="title"><?php the_field('h_title'); ?></h3>
-                    <div class="hotspot_slider">
-                        <?php if (have_rows('hotspot_slider')) : ?>
-                            <?php while (have_rows('hotspot_slider')) :
+                <div class="col-sm-12 px-lg-0 position-relative">
+                    <div class="actueel_slider">
+                        <?php if (have_rows('actuele_slider')) : ?>
+                            <?php while (have_rows('actuele_slider')) :
                                 the_row(); ?>
-
-                                <?= !empty($img = get_sub_field('slide_img')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'class_name']) : '' ?>
-
+                                <div class="slide">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6 col-lg-6 px-lg-0 d-flex justify-content-start">
+                                            <div class="content">
+                                                <p class="title">ACTUEEL</p>
+                                                <?php if ($content = get_sub_field('content')) : ?>
+                                                    <?php echo $content; ?>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-6 px-lg-0">
+                                            <?= !empty($img = get_sub_field('img')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'slide']) : '' ?>
+                                        </div>
+                                    </div>
+                                </div>
 
                             <?php endwhile; ?>
                         <?php endif; ?>
                     </div>
-                </div>
-                <div class="col-sm-12 col-lg-2 offset-lg-10 arrow_row d-none d-md-flex">
                     <div class="arrows">
-                        <a class="prev_hotpot_slide"><i class="fal fa-angle-left"></i></a>
-                        <a class="next_hotspot_slide"><i class="fal fa-angle-right"></i></a>
+                        <a class="prev_actuele_slide"><i class="far fa-chevron-left"></i></a>
+                        <a class="next_actuele_slide"><i class="far fa-chevron-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="planning">
+    <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <h3><?php the_field('p_title'); ?></h3>
-                    <div class="steps_block row">
-                        <img class="side_logo"
-                             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/thebridge-logo.svg"
-                             alt="Bridge logo">
-                        <?php if (have_rows('steps')) : ?>
-                            <?php while (have_rows('steps')) :
-                                the_row(); ?>
-                                <div class="col-sm-12 col-md-6 step">
-                                    <?= !empty($img = get_sub_field('icon')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'icon']) : '' ?>
-                                    <p><?php the_sub_field('titel'); ?></p>
-                                </div>
+                <div class="col-sm-12 col-lg-6 px-lg-0" data-aos="fade-up">
+                    <div class="block">
+                        <?= !empty($img = get_field('c_img_left')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'slide']) : '' ?>
+                        <div class="content">
+                            <?php if ($text_over_img = get_field('text_over_img')) : ?>
+                                <?php echo $text_over_img; ?>
+                            <?php endif; ?>
 
-                            <?php endwhile; ?>
-                        <?php endif; ?>
+                            <svg viewBox="0 0 344 37" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>CORNELIS</title>
+                                <defs>
+                                    <polygon id="path-1" points="0 0 344 0 344 37 0 37"></polygon>
+                                </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Home-Cornelis" transform="translate(-145.000000, -53.000000)">
+                                        <g id="Group-3" transform="translate(145.000000, 53.000000)">
+                                            <mask id="mask-2" fill="white">
+                                                <use xlink:href="#path-1"></use>
+                                            </mask>
+                                            <g id="Clip-2"></g>
+                                            <path d="M18.2920166,36.9487472 C21.7447996,36.9487472 24.6300797,36.381549 26.8966794,35.2460137 C29.1644164,34.1104784 31.2251683,32.5626424 32.9777172,30.5501139 L27.67003,25.1833713 C25.3511155,28.0728929 22.3111652,29.5694761 18.5501792,29.5694761 C15.7160766,29.5694761 13.3971621,28.4851936 11.5934355,26.4214123 C9.73853132,24.3063781 8.81051059,21.7255125 8.81051059,18.6810934 C8.81051059,15.6366743 9.73853132,13.1082005 11.5934355,11.0432802 C13.4483397,8.92824601 15.7672543,7.89635535 18.5501792,7.89635535 C21.8471548,7.89635535 24.8359275,9.3405467 27.4641823,12.1275626 L32.7195546,6.03758542 C31.122813,4.38724374 29.215594,3.04555809 27.0001719,2.06492027 C24.7847499,1.03302961 21.9506473,0.51594533 18.6013568,0.51594533 C13.0366442,0.51594533 8.55348524,2.32232346 5.15187982,5.93507973 C1.70023407,9.49544419 0,13.7790433 0,18.784738 C0,23.8416856 1.70023407,28.1241458 5.15187982,31.6332574 C8.60466285,35.1947608 12.9843293,36.9487472 18.2920166,36.9487472 L18.2920166,36.9487472 Z M66.2283818,29.5694761 C64.785173,29.5694761 63.4454568,29.3109339 62.2092331,28.7437358 C60.9718721,28.2277904 59.8903186,27.453303 58.9622978,26.4726651 C58.0354144,25.4931663 57.3132414,24.3063781 56.7980534,23.0159453 C56.2828654,21.6742597 56.0258401,20.2289294 56.0258401,18.7323462 L56.0258401,18.6298405 C56.0258401,17.0808656 56.2828654,15.6879271 56.7980534,14.3462415 C57.3132414,13.0558087 58.0354144,11.9214123 58.9622978,10.9407745 C59.839141,9.96013667 60.8695169,9.1856492 62.1057406,8.66970387 C63.3431016,8.10250569 64.6828178,7.84396355 66.1248892,7.84396355 C67.568098,7.84396355 68.9078142,8.10250569 70.1440379,8.66970387 C71.3813989,9.238041 72.4629524,10.0113895 73.3909732,10.9920273 C74.3178566,11.9726651 75.0388923,13.1082005 75.5552176,14.4498861 C76.0704056,15.7915718 76.3274309,17.1845103 76.3274309,18.7323462 L76.3274309,18.8359909 C76.3274309,20.332574 76.0704056,21.7255125 75.5552176,23.0671982 C75.0388923,24.4088838 74.3690342,25.5444191 73.4421508,26.5250569 C72.5664449,27.5056948 71.4837541,28.2277904 70.2475304,28.7949886 C69.0101694,29.3109339 67.6704532,29.5694761 66.2283818,29.5694761 L66.2283818,29.5694761 Z M66.1248892,37 C68.9589918,37 71.4837541,36.5364465 73.8538463,35.5558087 C76.2250757,34.5751708 78.23465,33.2334852 79.8825692,31.5820046 C81.5839405,29.8792711 82.8713419,27.9179954 83.8505402,25.7505695 C84.7785609,23.5318907 85.241434,21.2095672 85.241434,18.7323462 L85.241434,18.6298405 C85.241434,16.1013667 84.7785609,13.7790433 83.8505402,11.5592255 C82.9236568,9.39179954 81.6351182,7.48291572 79.9348841,5.83143508 C78.2858276,4.17995444 76.2762533,2.83826879 73.9573388,1.85763098 C71.5872466,0.878132118 69.0624843,0.413439636 66.2283818,0.413439636 C63.4454568,0.413439636 60.8695169,0.878132118 58.5506024,1.85763098 C56.1805102,2.83826879 54.1709359,4.17995444 52.4695645,5.88382688 C50.8216454,7.53416856 49.4819291,9.49544419 48.5539084,11.6628702 C47.627025,13.881549 47.1630146,16.2038724 47.1630146,18.7323462 L47.1630146,18.8359909 C47.1630146,21.3132118 47.627025,23.6355353 48.5539084,25.8542141 C49.4819291,28.0216401 50.7693305,29.9817768 52.4183869,31.5820046 C54.118621,33.2334852 56.1281953,34.5751708 58.4471099,35.5558087 C60.817202,36.5364465 63.3431016,37 66.1248892,37 L66.1248892,37 Z M134.28551,36.9487472 L125.422685,23.9441913 C130.524524,22.2938497 133.100464,18.5261959 133.100464,12.5922551 C133.100464,9.1856492 132.070088,6.45102506 130.009336,4.33485194 C127.484574,1.80637813 123.825943,0.51594533 119.084622,0.51594533 L102.183499,0.51594533 L102.183499,36.9487472 L110.943969,36.9487472 L110.943969,7.99886105 L118.414763,7.99886105 C122.331557,8.0501139 124.237639,9.75398633 124.237639,13.1082005 C124.082969,16.4100228 122.176887,18.0615034 118.569434,18.0615034 L111.406842,18.0615034 L124.237639,36.9487472 L134.28551,36.9487472 Z M183.761753,37 L183.761753,0.51594533 L175.053598,0.51594533 L175.053598,21.88041 L158.822333,0.51594533 L150.835213,0.51594533 L150.835213,37 L159.492191,37 L159.492191,14.9134396 L176.289821,37 L183.761753,37 Z M201.852471,7.9476082 L229.884156,7.9476082 L229.884156,0.56833713 L201.852471,0.56833713 L201.852471,7.9476082 Z M209.736098,29.5694761 L209.736098,22.4476082 L219.372274,22.4476082 L219.372274,15.0683371 L201.852471,15.0683371 L201.852471,36.9487472 L229.884156,36.9487472 L229.884156,29.5694761 L209.736098,29.5694761 Z M274.073183,37 L274.073183,29.4658314 L256.038191,29.4658314 L256.038191,0.51594533 L247.278858,0.51594533 L247.278858,37 L274.073183,37 Z M289.710787,36.9487472 L298.47012,36.9487472 L298.47012,0.51594533 L289.710787,0.51594533 L289.710787,36.9487472 Z M330.55166,36.9487472 C332.510057,36.9487472 334.364961,36.690205 336.014018,36.1742597 C337.663074,35.6583144 339.105146,34.9362187 340.290192,33.9555809 C341.475238,32.9749431 342.403258,31.8394077 343.021939,30.4464692 C343.691797,29.0535308 344,27.5056948 344,25.7505695 L344,25.6480638 C344,24.0990888 343.742975,22.7574032 343.278964,21.6230068 C342.763776,20.4874715 342.042741,19.5068337 341.012365,18.6298405 C340.033166,17.8041002 338.795805,17.0808656 337.353734,16.4624146 C335.910525,15.8428246 334.313784,15.3268793 332.457742,14.8109339 C330.964493,14.3974943 329.727132,14.0888383 328.747934,13.7790433 C327.768735,13.4692483 326.996522,13.1594533 326.481334,12.8496583 C325.966146,12.5398633 325.604491,12.1788155 325.398643,11.7665148 C325.141618,11.3530752 325.038125,10.8883827 325.038125,10.2699317 L325.038125,10.166287 C325.038125,9.28929385 325.398643,8.56719818 326.120816,8.0501139 C326.790674,7.48291572 327.82105,7.22551253 329.211944,7.22551253 C330.655153,7.22551253 332.097224,7.53416856 333.591611,8.15375854 C335.034819,8.72095672 336.735053,9.70159453 338.589958,10.9407745 L342.918446,4.69589977 C341.012365,3.14806378 338.950475,2.01252847 336.683876,1.18678815 C334.468454,0.413439636 331.994869,0 329.315437,0 C327.408218,0 325.656806,0.258542141 324.111242,0.774487472 C322.513363,1.34168565 321.122469,2.06492027 319.988601,3.04555809 C318.854732,4.02505695 317.979026,5.16059226 317.360346,6.5022779 C316.79398,7.79271071 316.48464,9.28929385 316.48464,10.8883827 L316.48464,10.9920273 C316.48464,12.7471526 316.742803,14.191344 317.309168,15.4305239 C317.875534,16.6173121 318.700062,17.5968109 319.730438,18.4225513 C320.761951,19.2482916 322.049353,19.9715262 323.543739,20.4874715 C325.038125,21.0546697 326.687182,21.570615 328.490908,21.9840547 C329.985295,22.3963554 331.170341,22.7061503 332.046047,23.0671982 C332.974067,23.3769932 333.643925,23.6867882 334.159113,23.9965831 C334.621987,24.3063781 334.931327,24.667426 335.138312,25.0284738 C335.291845,25.4407745 335.395337,25.8542141 335.395337,26.4214123 L335.395337,26.5250569 C335.395337,27.5569476 334.983642,28.3314351 334.159113,28.8986333 C333.334585,29.4145786 332.200717,29.7243736 330.70633,29.7243736 C328.747934,29.7243736 326.945344,29.3109339 325.296288,28.5888383 C323.647232,27.8143508 321.894683,26.6799544 319.988601,25.1309795 L315.041431,31.0660592 C317.257991,33.0785877 319.679261,34.523918 322.358693,35.5034169 C325.038125,36.4328018 327.768735,36.9487472 330.55166,36.9487472 L330.55166,36.9487472 Z"
+                                                  id="Fill-1" fill="#231F20" mask="url(#mask-2)"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
                     </div>
-
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="aanmelden">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-lg-3">
-                    <h3><?php the_field('m_title'); ?></h3>
-                </div>
-                <div class="col-sm-12 col-lg-6 ">
-                    <p><?php the_field('m_content'); ?></p>
-                </div>
-                <div class="col-sm-12 col-lg-3 text-lg-right">
-                    <?php
-                    $link = get_field('m_button_link');
-                    if ($link) : ?>
-                        <a class="btn btn_green"
-                           href="<?php echo esc_url($link); ?>"><?php the_field('m_button_text'); ?></a>
+                <div class="col-sm-12 col-lg-6 pr-lg-0 col_right">
+                    <?php if ($content = get_field('content_+_formulier')) : ?>
+                        <?php echo $content; ?>
                     <?php endif; ?>
 
+
+                    <form id="register_form" action="<?php echo get_site_url(); ?>/#contact" method="POST">
+                        <div style="display: none;">
+                            <?php wp_nonce_field('form_intrest') ?>
+                            <input type="hidden" name="_type" value="intrest_form"/>
+                        </div>
+                        <p><?= Form::show_messages() ?></p>
+                        <div class="form-group">
+                            <label for="first-name"></label>
+                            <input type="text" class="form-control" name="name" id="first-name" required
+                                   placeholder="<?= __('First name', 'cornelis') ?>">
+                            <?= Form::get_field_errors('first-name') ?>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name"></label>
+                            <input type="text" class="form-control" name="lastname" id="last-name" required
+                                   placeholder="<?= __('Last name', 'cornelis') ?>">
+                            <?= Form::get_field_errors('last-name') ?>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone"></label><input type="tel" class="form-control" name="phone" id="phone"
+                                                              required
+                                                              placeholder="<?= __('Phone', 'cornelis') ?>">
+                            <?= Form::get_field_errors('phone') ?>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"></label>
+                            <input type="email" class="form-control" name="email" id="email" required
+                                   placeholder="<?= __('E-mail', 'cornelis') ?>">
+                            <?= Form::get_field_errors('email') ?>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="accept" id="accept" required>
+                            <span class="checkmark"></span>
+                            <label class="check-container"> <?= __('Please keep me informed of any new developments in the new building project CORNELIS.', 'cornelis') ?>
+                            </label>
+                        </div>
+                        <div class="g-recaptcha mb-4" data-sitekey="6Ldk_4gdAAAAAIp82Gd3o18w7DmdRv859GfozCgs"></div>
+                        <button type="submit"
+                                class="btn btn_form"><?= __('Sign up now', 'cornelis') ?><i
+                                    class="fal fa-long-arrow-right"></i></button>
+                    </form>
+                    <script src='https://www.google.com/recaptcha/api.js'></script>
+
                 </div>
             </div>
         </div>
     </section>
 
-
-
-
-<?php
-$map_position = get_field('maps_position_center');
-$map_zoom = get_field('maps_zoom_position');
-?>
-    <script>
-        let map;
-        let markers = [];  // Create a global variable for the markers.
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                zoom: <?php echo $map_zoom; ?>,
-                center: new google.maps.LatLng(<?php echo $map_position['lat']; ?>, <?php echo $map_position['lng']; ?>),
-                mapTypeId: 'roadmap',
-                scaleControl: false,
-                draggable: true,
-                mapTypeControl: false,
-                streetViewControl: false,
-                zoomControl: true,
-                zoomControlOptions: {
-                    position: google.maps.ControlPosition.TOP_RIGHT,
-                },
-
-                styles: [
-                    {
-                        "featureType": "administrative",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "poi",
-                        "stylers": [
-                            {
-                                "visibility": "simplified"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road",
-                        "stylers": [
-                            {
-                                "visibility": "simplified"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "stylers": [
-                            {
-                                "visibility": "simplified"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "transit",
-                        "stylers": [
-                            {
-                                "visibility": "simplified"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "landscape",
-                        "stylers": [
-                            {
-                                "visibility": "simplified"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.highway",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.local",
-                        "stylers": [
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.highway",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "stylers": [
-                            {
-                                "color": "#84afa3"
-                            },
-                            {
-                                "lightness": 52
-                            }
-                        ]
-                    },
-                    {
-                        "stylers": [
-                            {
-                                "saturation": -77
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road"
-                    }
-                ]
-            });
-
-            // Add the markers from the marker array.
-            function addMarker(feature) {
-                var marker = new google.maps.Marker({
-                    position: feature.position,
-                    icon: features[i].icon,
-                    title: features[i].name,
-                    map: map
-                });
-                markers.push({
-                    marker: marker,
-                    type: feature.type
-                });
-            }
-
-            // Marker array
-            let features = [
-                {
-                    position: new google.maps.LatLng(<?php echo $map_position['lat']; ?>, <?php echo $map_position['lng']; ?>),
-                    icon: '<?php echo get_template_directory_uri(); ?>/assets/svg/bridge-pointer.svg',
-                    windowcontent: '<div class="marker"><span class="map_title">The Bridge</span></div>',
-                    type: "food"
-                },
-
-                // Loop for points
-                <?php
-
-                $pointers = get_field('maps_pointers');
-                foreach( $pointers as $pointer ) {
-                ?>
-                {
-                    position: new google.maps.LatLng(<?php echo $pointer['pointer_position']['lat'] ?>, <?php echo $pointer['pointer_position']['lng']; ?>),
-                    icon: '<?php echo $pointer['pointer_image']['url'] ?>',
-                    windowcontent: '<div class="marker"><span class="map_title"><?php echo $pointer['pointer_naam']; ?></span></div>',
-                    type: '<?php echo $pointer['pointer_category'] ?>'
-                },
-                <?php } ?>
-
-
-            ];
-
-            // Itterate through through the markers and add them to the map.
-            for (var i = 0, feature; feature === features[i]; i++) {
-                addMarker(feature);
-            }
-
-            var prev_infowindow = false;
-
-            // Create markers.
-            features.forEach(function (feature) {
-                let marker = new google.maps.Marker({
-                    position: feature.position,
-                    icon: feature.icon,
-                    map: map
-                });
-                markers.push({
-                    marker: marker,
-                    type: feature.type
-                });
-
-                let infowindow = new google.maps.InfoWindow({
-                    content: feature.windowcontent
-                });
-
-                marker.addListener('mouseover', function () {
-                    if (prev_infowindow) {
-                        prev_infowindow.close();
-                    }
-                    prev_infowindow = infowindow;
-                    infowindow.open(map, marker);
-                });
-
-                // assuming you also want to hide the infowindow when user mouses-out
-                marker.addListener('mouseout', function () {
-                    infowindow.close();
-                });
-            })
-
-
-        }
-
-        /**
-         * Function to filter markers by category
-         */
-        filterMarkers = function (type) {
-            for (i = 0; i < markers.length; i++) {
-                marker = markers[i];
-                // If is same category or category not picked
-                if (markers[i].type === type) {
-                    markers[i].marker.setVisible(true);
-                }
-                // Categories don't match
-                else {
-                    markers[i].marker.setVisible(false);
-                }
-            }
-        }
-
-        var google;
-        // Load and initialize the page.
-
-    </script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2vmgrEH5t14PQY_A2Uwz23ww4ZUjq9iY&callback=initMap"></script>
 
 <?php
 get_footer();

@@ -1,0 +1,40 @@
+.btn {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 7.5px 30px;
+    transition: all .3s ease-in-out;
+    width: max-content;
+    border-radius: 22px;
+    font-family: $secondary;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-lg() {
+        padding: ratio-vw(7.5px) ratio-vw(30px);
+    }
+
+    i {
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: -10px;
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover {
+        i {
+            margin-left: 25px;
+        }
+    }
+}
+
+.btn_gray {
+    background: $darkgray;
+    color: $white;
+
+    &:hover {
+        color: $white;
+    }
+
+}

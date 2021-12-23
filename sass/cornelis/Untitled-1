@@ -1,0 +1,218 @@
+/*
+Theme Name: Porto Child
+Theme URI: https://www.portotheme.com/wordpress/porto
+Author: SW-THEMES
+Author URI: https://www.portotheme.com/
+Description: Porto Responsive Wordpress + eCommerce Theme.
+Version: 1.1
+Template: porto
+License: Commercial
+License URI: http://themeforest.net/licenses/regular_extended
+Tags: woocommerce, corporate, ecommerce, responsive, blue, black, green, white, light, dark, red, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+
+*/
+
+@import url("../porto/style.css");
+
+/*************** ADD YOUR CUSTOM CSS HERE  ***************/
+
+.usp_block {
+    margin-top: 25px;
+}
+
+.usp_block h2 {
+    margin-bottom: 10px;
+}
+
+.usps {
+    list-style: none;
+    padding-left: 10px !important;
+}
+
+
+.usps li i {
+    margin-right: 7px;
+    color: #6dab3c;
+}
+
+ul.children {
+    background-color: transparent;
+}
+
+.contact-details,
+.mobile-menu {
+    padding-left: 0 !important;
+}
+
+.has-sub .sub-menu {
+    padding-left: 15px !important;
+    margin-bottom: 25px !important;
+}
+
+#side-nav-panel {
+    width: 100%;
+    transform: translateX(-100%);
+}
+
+
+/* Filters */
+
+.prdctfltr_filter_title {
+    display: none!important;
+}
+
+.porto-sicon-description {
+    line-height: 22px !important;
+}
+
+.woocommerce-product-details__short-description,
+.usps li {
+    font-family: Arial;
+    line-height: 24px !important;
+}
+
+.cart-popup .variation {
+    display: none !important;
+}
+
+.variation {
+    margin-top: 15px;
+    display: inline-table !important;
+    columns: 1;
+    text-transform: inherit;
+    padding-left: 0 !important;
+}
+
+.variation dt,
+.variation dd {
+    text-transform: initial !important;
+    font-family: Arial !important;
+    font-size: 13px !important;
+}
+
+
+.variation dt {
+    flex: 50%;
+    display: inline-flex !important;
+    width: 48%;
+
+}
+
+.variation-Uploaden {
+    margin-top: 15px !important;
+}
+
+.syncsilo_upload {
+    background-color: #e20c7a !important;
+    opacity: 1;
+    padding: 5px 7px;
+    border-radius: 3px;
+    color: #fff !important;
+    border: 1px solid #e20c7a !important;
+    transition: all .3s ease-in-out;
+    font-size: 12px!important;
+}
+
+.syncsilo_upload:hover {
+    background-color: transparent !important;
+    color: #e20c7a !important;
+}
+
+
+.actions .button.wecb_emptycart {
+    background: #fff !important;
+    border-color: rgba(0, 0, 0, 0.09) !important;
+    color: #333 !important;
+}
+
+.shop_table dl.variation {
+    max-width: 500px;
+}
+
+.woocommerce-checkout-review-order-table dl.variation {
+    max-width: unset;
+}
+
+.woocommerce-customer-details {
+    margin-bottom: 25px;
+}
+
+.woocommerce-table__product-name .wc-item-meta {
+    padding-left: 0!important;
+    margin-top: 15px;
+}
+
+.woocommerce-table__product-name .wc-item-meta li,
+.woocommerce-table__product-name .wc-item-meta li p {
+    color: #232529!important;
+    font-size: 16px!important;
+    line-height: 22px!important;
+}
+
+.woocommerce-tabs .resp-tabs-list li,
+.usp_block h2,
+.woocommerce-tabs .tab-content p,
+.woocommerce-cart-form,
+.woocommerce-cart-form p,
+.woocommerce-cart-form .porto-u-sub-heading,
+.woocommerce-checkout,
+.woocommerce-checkout p,
+.woocommerce-checkout .porto-u-sub-heading,
+.woocommerce-checkout h3,
+.woocommerce-checkout h4,
+.woocommerce-checkout h5,
+.cart-collaterals,
+.cart-collaterals p,
+.cart-collaterals h2,
+.cart-collaterals h4,
+.cart-collaterals .porto-u-sub-heading,
+.cart-popup,
+.cart-popup span,
+.cart-popup p,
+.cart-popup .woocommerce-mini-cart__buttons a,
+#mini-cart .buttons a
+    {
+    font-family: Arial !important;
+    text-transform: initial!important;
+}
+
+
+#footer .usp_block {
+    margin-top: 0px!important;
+}
+
+#footer .footer-main .widget-title {
+    color: #e20c7a!important;
+}
+
+#footer li,
+#footer ul {
+    border: none !important;
+    padding-left: 5px !important;
+}
+
+#footer .footer-bottom .widget-title {
+    margin-bottom: 0px!important;
+}
+
+#footer .footer-bottom{
+    background-color: #fff;
+    position: relative;
+}
+
+.footer-wrapper {
+    margin-bottom: 0px!important;
+}
+
+@media only screen and (min-width: 1024px) {
+    #header .header-main .header-left {
+        margin-left: 50px !important;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .variation {
+        text-align: left;
+    }
+}

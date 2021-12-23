@@ -1,0 +1,83 @@
+/* Admin */
+$white: #fff;
+$black: #000;
+$gray: #f0f0f1;
+
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+  width: 185px;
+}
+
+#adminmenuback {
+  bottom: unset;
+  top: 100px;
+}
+
+#adminmenuwrap {
+  top: 100px;
+
+
+}
+
+#adminmenu {
+  margin: 0;
+
+  .wp-submenu {
+    left: 185px;
+  }
+}
+
+#wpcontent, #wpfooter {
+  margin-left: 200px;
+}
+
+.link_block {
+  columns: 2;
+
+  .post_type_block {
+    background: $gray;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    font-size: 20px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 35px;
+
+    &.mb-2 {
+      margin-bottom: 10px;
+    }
+
+
+    span {
+      font-size: 20px;
+      margin-right: 15px;
+      margin-left: -15px;
+      display: unset;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      background: $black;
+      color: $gray;
+    }
+  }
+}
+
+#dashboard-widgets {
+  .postbox {
+    .inside {
+      padding: 10px;
+      margin: 0;
+
+    }
+  }
+}
+
+#projecten_help_widget, #vacature_help_widget {
+
+}
+

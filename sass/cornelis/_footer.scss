@@ -1,0 +1,134 @@
+footer {
+  padding: 40px 0 110px 0;
+  background: $green;
+
+  @include media-breakpoint-lg() {
+    padding: ratio-vw(40px) 0 ratio-vw(110px) 0;
+  }
+
+  h4, p {
+    color: $white;
+  }
+
+
+  h4 {
+    font-family: $secondary;
+    font-size: 12px;
+    letter-spacing: 1.71px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: $lightgray;
+  }
+
+  .col_left {
+    svg {
+      width: 182px;
+      height: auto;
+      margin-bottom: 15px;
+
+      path {
+        fill: $white;
+      }
+    }
+
+    p {
+      width: 400px;
+    }
+  }
+}
+
+.bottom_bar {
+  padding: 15px 0;
+
+  a {
+    font-size: 12px;
+    letter-spacing: 1.71px;
+    line-height: 34px;
+    font-family: $secondary;
+    text-transform: uppercase;
+  }
+
+  span {
+    font-size: 12px;
+    letter-spacing: 1.71px;
+    line-height: 34px;
+    font-family: $secondary;
+  }
+}
+
+
+.modal {
+  z-index: 999;
+  position: fixed;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $white;
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  transition: all .3s ease-in-out;
+  padding: 25px;
+  overflow: scroll;
+
+  @include media-breakpoint-lg() {
+    max-width: ratio-vw(800px);
+  }
+
+  .close {
+    font-family: $secondary;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    background: $black;
+    color: $white !important;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h4 {
+    font-family: $secondary;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  &.active {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+.modal_link {
+  cursor: pointer;
+}
+
+
+#register_form {
+  #message {
+    &.error {
+      p {
+        color: red;
+        margin-top: 5px;
+      }
+    }
+
+    &.success {
+      p {
+        background: #4b6566;
+        color: #fff;
+        padding: 5px 20px;
+        width: max-content;
+      }
+    }
+  }
+}
+
+.makkelaar_logo {
+  margin-top: 40px;
+}

@@ -1,0 +1,527 @@
+
+@media only screen and (max-width: 1025px) {
+
+  #wrapper-navbar {
+    padding: 15px;
+    background: $white;
+
+    &.scrolled-down {
+      transform: translateY(-100%);
+      top: 0;
+    }
+
+    &.scrolled-up {
+      padding: 10px 15px;
+      top: 0;
+      transform: translateY(0);
+      background: $white;
+
+      #main-nav {
+        .container {
+          .navbar-brand {
+            svg {
+              width: 225px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #main-nav {
+    position: relative;
+    z-index: 99999;
+
+    .container {
+      .navbar-brand {
+        svg {
+          width: 250px;
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  #navbarNavDropdown {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    transition: all .3s linear;
+    width: 100%;
+    background: $white;
+    height: 0;
+    overflow: hidden;
+    max-height: 425px;
+
+    #main-menu {
+      margin-left: 0 !important;
+      border-top: 0.5px solid $black;
+
+      > li {
+        border-bottom: 0.5px solid #e5e5e5;
+        padding: 0;
+        margin: 0;
+
+        > .nav-link {
+          padding: 15px;
+          text-align: left;
+        }
+      }
+    }
+
+    &.active {
+      transform: translateY(0);
+      height: 100%;
+
+    }
+  }
+
+  #header {
+    height: auto;
+    margin-top: 80px;
+    min-height: unset;
+
+    .leaf_background {
+      display: none;
+    }
+
+    .slick-dots, .arrow {
+      right: 125px;
+
+    }
+
+    .column_right {
+      position: relative;
+      order: -1;
+      height: 400px;
+      margin-bottom: 50px;
+
+      .header_image {
+        height: 400px;
+      }
+
+      .header_slider {
+        height: 400px;
+
+        img {
+          height: 400px;
+        }
+      }
+
+      .wood, .leaf {
+        height: 400px;
+      }
+
+      .leaf {
+        width: 80px;
+      }
+
+      .wood {
+        width: 20px;
+        right: 80px;
+      }
+    }
+
+    .column_left {
+      h1 {
+        font-size: 70px;
+        line-height: 45px;
+        width: auto;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 28px;
+        width: auto;
+      }
+    }
+  }
+
+  #unique {
+    margin-top: 50px;
+    padding: 50px 0 15px 0;
+    background: $lightgray;
+  }
+
+  #appartementen {
+    padding-top: 50px;
+
+    .first_row {
+      .col_left {
+        h3 {
+          font-size: 80px;
+          line-height: 55px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+    .second_row {
+      margin-top: 50px;
+
+      .col_left, .col_right {
+        height: 300px;
+
+        .wood {
+          transform: rotate(90deg);
+          height: 250%;
+          width: 35px;
+          right: 0;
+          top: -80px;
+        }
+      }
+    }
+
+    .third_row {
+      margin: 50px 0;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #gevelpark {
+    margin-top: 0;
+
+    .first_row {
+      height: auto;
+
+      .col_left {
+        height: 300px;
+        position: relative;
+      }
+
+      .col_right {
+        padding-top: 50px;
+
+        h2 {
+          font-size: 70px;
+          line-height: 45px;
+        }
+      }
+    }
+
+    .second_row {
+      .col_left {
+        padding-top: 0;
+      }
+
+      .col_right {
+        padding-bottom: 50px;
+
+        .leaf_image {
+          margin-top: 25px;
+          height: 400px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #voorzieningen {
+    margin: 50px 0;
+    min-height: unset;
+
+    .col_left {
+      h2 {
+        font-size: 70px;
+        line-height: 45px;
+      }
+
+      h4 {
+        font-size: 26px;
+        line-height: 32px;
+      }
+    }
+
+    .col_right {
+      position: relative;
+      margin-top: 50px;
+
+      .voorzieningen_slider {
+        height: 350px;
+
+        .slick-list {
+          .slick-track {
+            .slick-slide {
+              height: 350px;
+
+              .slide_img {
+                height: 300px;
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .arrows {
+        left: 268px;
+        bottom: 50px;
+      }
+    }
+  }
+
+  #locatie {
+    .wooden_background {
+      h2 {
+        font-size: 70px;
+        line-height: 45px;
+      }
+    }
+
+    .locatie_slider {
+      .slick-list {
+        padding: 0!important;
+
+        .content {
+          margin-top: 0;
+          padding: 50px 35px;
+
+          h3 {
+            width: auto;
+            font-size: 70px;
+            line-height: 45px;
+            margin-bottom: 15px;
+          }
+
+          p {
+            width: auto;
+            font-size: 26px;
+            line-height: 34px;
+            margin-bottom: 0;
+          }
+        }
+
+        .slide {
+          height: auto;
+
+          img {
+            height: 300px;
+          }
+        }
+      }
+    }
+
+    .arrows {
+      left: unset;
+      bottom: unset;
+      top: 250px;
+      right: 15px;
+    }
+  }
+
+  #actueel {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: $lightgray;
+
+    &::before {
+      display: none;
+    }
+
+    .actueel_slider {
+      .slick-list {
+        padding: 0!important;
+        overflow: hidden;
+
+        .slick-slide {
+          margin-right: 0;
+
+          .slide {
+            .content {
+              margin-right: 0;
+              margin-left: 0;
+              margin-top: 0;
+
+              h3, p {
+                width: auto;
+
+              }
+            }
+
+            img {
+              height: 300px;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .arrows {
+      right: 15px;
+      left: unset;
+      top: -35px;
+      bottom: unset;
+    }
+  }
+
+  #contact {
+    padding: 0;
+
+    .block {
+      height: 300px;
+      width: 100%;
+      padding: 25px 0;
+
+      img {
+        height: 300px;
+      }
+
+      .content {
+        h3 {
+          font-size: 70px;
+          line-height: 45px;
+        }
+      }
+    }
+
+    .col_right {
+      padding: 50px 15px;
+
+      p {
+        br {
+          display: none;
+        }
+      }
+
+      form {
+        margin-top: 50px;
+
+        .form-group {
+          input {
+            width: 100%;
+          }
+        }
+
+        .btn_form {
+          width: 100%;
+
+          i {
+            margin-right: -80px;
+            margin-left: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 50px 0;
+
+    .col_left {
+      margin-bottom: 25px;
+    }
+  }
+
+  .bottom_bar {
+    .column_left, .column_right {
+      text-align: center;
+    }
+  }
+
+  .makkelaar_logo {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 650px) {
+  #appartementen {
+    .second_row {
+      .col_left {
+        .wood {
+          transform: rotate(0);
+          height: 300px;
+          width: 45px;
+          position: absolute;
+          right: -22.5px;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  #voorzieningen {
+    .col_right {
+      .voorzieningen_slider {
+        height: 500px;
+
+        .slick-list {
+          .slick-track {
+            .slick-slide {
+              .slide_img {
+                width: 100%!important;
+                height: 500px;
+              }
+            }
+          }
+
+        }
+      }
+
+      .arrows {
+        right: 10px;
+        bottom: 0;
+        left: unset;
+      }
+    }
+  }
+
+  #locatie {
+    .locatie_slider {
+      .slick-list {
+        .slide {
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .arrows {
+      top: 15px;
+      right: unset;
+      left: 25px;
+    }
+  }
+
+  #actueel {
+    .actueel_slider {
+      .slick-list {
+        .slick-slide {
+          .slide {
+            img {
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .arrows {
+      top: 0;
+    }
+  }
+
+  #contact {
+    .block {
+      padding: 25px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .col_right {
+      p {
+        width: 100%;
+      }
+    }
+  }
+}

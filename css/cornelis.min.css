@@ -215,13 +215,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "SF Movie Poster";
+  font-family: "SF Movie Poster", sans-serif;
   font-weight: 700;
   text-transform: lowercase;
 }
 
 p, li {
-  font-family: "Museo Sans";
+  font-family: "Museo Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -237,7 +237,7 @@ p, li {
 
 a {
   text-decoration: none;
-  font-family: "SF Movie Poster";
+  font-family: "SF Movie Poster", sans-serif;
 }
 
 h1, .h1 {
@@ -6107,7 +6107,7 @@ a:hover {
 }
 
 body {
-  font-family: "SF Movie Poster";
+  font-family: "SF Movie Poster", sans-serif;
 }
 body::before {
   transition: all 0.3s ease-in-out;
@@ -6220,7 +6220,7 @@ body.no-scroll::before {
   }
 }
 #header .column_left p {
-  font-family: "Minion Pro";
+  font-family: "Minion Pro", sans-serif;
   font-size: 22px;
   letter-spacing: 0;
   line-height: 32px;
@@ -6335,7 +6335,7 @@ body.no-scroll::before {
 }
 #unique h2 {
   text-transform: uppercase;
-  font-family: "Museo Sans";
+  font-family: "Museo Sans", sans-serif;
   font-size: 28px;
 }
 @media (max-width: 1799px) and (min-width: 1024px) {
@@ -6344,7 +6344,7 @@ body.no-scroll::before {
   }
 }
 #unique .blocks .up {
-  font-family: "Minion Pro";
+  font-family: "Minion Pro", sans-serif;
   font-size: 40px;
 }
 @media (max-width: 1799px) and (min-width: 1024px) {
@@ -6353,7 +6353,7 @@ body.no-scroll::before {
   }
 }
 #unique .blocks .middle {
-  font-family: "SF Movie Poster";
+  font-family: "SF Movie Poster", sans-serif;
   color: #4B6566;
   font-size: 55px;
   font-weight: 700;
@@ -6507,7 +6507,7 @@ body.no-scroll::before {
   }
 }
 #gevelpark .first_row .col_right p {
-  font-family: "Minion Pro";
+  font-family: "Minion Pro", sans-serif;
   font-size: 32px;
   letter-spacing: 0;
   line-height: 38px;
@@ -6579,7 +6579,7 @@ body.no-scroll::before {
 }
 #voorzieningen .col_left h4 {
   text-transform: inherit;
-  font-family: "Minion Pro";
+  font-family: "Minion Pro", sans-serif;
   font-size: 32px;
   letter-spacing: 0;
   line-height: 38px;
@@ -6785,7 +6785,7 @@ body.no-scroll::before {
   }
 }
 #locatie .locatie_slider .slick-list .content p {
-  font-family: "Minion Pro";
+  font-family: "Minion Pro", sans-serif;
   font-size: 32px;
   letter-spacing: 0;
   line-height: 40px;
@@ -7010,7 +7010,7 @@ body.no-scroll::before {
   margin-bottom: 15px;
 }
 #contact .col_right form {
-  font-family: "Museo Sans";
+  font-family: "Museo Sans", sans-serif;
 }
 #contact .col_right form .form-group {
   margin-bottom: 20px;
@@ -7023,7 +7023,7 @@ body.no-scroll::before {
   border-radius: 22.5px;
   padding: 15px 25px;
   background-color: #FFFFFF;
-  font-family: "Museo Sans";
+  font-family: "Museo Sans", sans-serif;
   border: none;
 }
 #contact .col_right form .form-group input.error {
@@ -7070,7 +7070,7 @@ body.no-scroll::before {
   width: -moz-max-content;
   width: max-content;
   border-radius: 22px;
-  font-family: "Museo Sans";
+  font-family: "Museo Sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: flex;
@@ -7527,7 +7527,7 @@ body.no-scroll::before {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
-  font-family: "Museo Sans";
+  font-family: "Museo Sans", sans-serif;
   display: block;
   color: #2B2B2B;
   font-size: 12px;
@@ -7578,7 +7578,7 @@ body.no-scroll::before {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
-  font-family: "Museo Sans";
+  font-family: "Museo Sans", sans-serif;
 }
 #navbarNavDropdown #main-menu > li > .dropdown-menu > .menu-item-has-children > .dropdown-menu {
   background-color: #f4f4f4;
@@ -7700,7 +7700,7 @@ footer h4, footer p {
   color: #fff;
 }
 footer h4 {
-  font-family: "Museo Sans";
+  font-family: "Museo Sans", sans-serif;
   font-size: 12px;
   letter-spacing: 1.71px;
   line-height: 20px;
@@ -7727,14 +7727,14 @@ footer .col_left p {
   font-size: 12px;
   letter-spacing: 1.71px;
   line-height: 34px;
-  font-family: "Museo Sans";
+  font-family: "Museo Sans", sans-serif;
   text-transform: uppercase;
 }
 .bottom_bar span {
   font-size: 12px;
   letter-spacing: 1.71px;
   line-height: 34px;
-  font-family: "Museo Sans";
+  font-family: "Museo Sans", sans-serif;
 }
 
 .modal {
@@ -7757,7 +7757,7 @@ footer .col_left p {
   }
 }
 .modal .close {
-  font-family: "Museo Sans";
+  font-family: "Museo Sans", sans-serif;
   position: absolute;
   right: 0;
   top: 0;
@@ -7772,7 +7772,7 @@ footer .col_left p {
   justify-content: center;
 }
 .modal h4 {
-  font-family: "Museo Sans";
+  font-family: "Museo Sans", sans-serif;
   font-weight: 700;
   margin-bottom: 25px;
 }

@@ -885,6 +885,11 @@ body {
       left: -800px;
       height: 100%;
       z-index: 2;
+
+      @include media-breakpoint-lg() {
+        width: ratio-vw(800px);
+        left: - ratio-vw(800px);;
+      }
     }
 
     .slick-list {
@@ -987,6 +992,15 @@ body {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  #actueel{
+    &::before {
+      display: none;
+    }
+  }
+}
+
+
 #contact {
   padding: 75px 0;
   background: $lightgray;
@@ -996,6 +1010,11 @@ body {
     width: 541px;
     padding: 50px;
 
+    @include media-breakpoint-lg() {
+      width: ratio-vw(541px);
+      padding: ratio-vw(50px);
+    }
+
     img {
       height: 100%;
       width: 541px;
@@ -1004,6 +1023,10 @@ body {
       top: 0;
       left: 0;
       z-index: 1;
+
+      @include media-breakpoint-lg() {
+        width: ratio-vw(541px);
+      }
     }
 
     .content {
@@ -1017,6 +1040,11 @@ body {
         letter-spacing: 3.75px;
         line-height: 70px;
         color: $white;
+
+        @include media-breakpoint-lg() {
+          font-size: ratio-vw(100px);
+          line-height: ratio-vw(70px);
+        }
       }
 
       svg {

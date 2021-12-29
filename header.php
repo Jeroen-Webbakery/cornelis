@@ -23,7 +23,15 @@ $container = get_theme_mod('understrap_container_type');
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/slick.css">
     <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slick.min.js"></script>
     <link rel="stylesheet"  href="<?php echo get_stylesheet_directory_uri(); ?>/css/aos.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XE59W36TL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-5XE59W36TL');
+    </script>
     <?php wp_head(); ?>
 </head>
 

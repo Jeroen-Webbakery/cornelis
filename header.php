@@ -23,15 +23,16 @@ $container = get_theme_mod('understrap_container_type');
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/slick.css">
     <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slick.min.js"></script>
     <link rel="stylesheet"  href="<?php echo get_stylesheet_directory_uri(); ?>/css/aos.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XE59W36TL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MRQ7VFC');</script>
 
-        gtag('config', 'G-5XE59W36TL');
-    </script>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRQ7VFC"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
     <?php wp_head(); ?>
 </head>
 

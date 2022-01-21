@@ -7724,6 +7724,14 @@ footer {
     padding: 2.2222222222vw 0 6.1111111111vw 0;
   }
 }
+footer a {
+  text-decoration: none;
+  border-bottom: 0.5px solid transparent;
+}
+footer a:hover {
+  color: #fff;
+  border-color: #fff;
+}
 footer h4, footer p {
   color: #fff;
 }
@@ -7746,6 +7754,7 @@ footer .col_left svg path {
 }
 footer .col_left p {
   width: 400px;
+  max-width: 100%;
 }
 
 .bottom_bar {

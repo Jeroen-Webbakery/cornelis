@@ -43,6 +43,11 @@ $(document).ready(function () {
                 $(this).addClass("error");
             } else{
                 $(this).removeClass("error");
+
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'FormulierIngevuld'
+                });
             }
         });
     });

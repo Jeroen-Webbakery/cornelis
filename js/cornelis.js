@@ -44,6 +44,14 @@ $(document).ready(function () {
             } else{
                 $(this).removeClass("error");
 
+
+            }
+        });
+    });
+
+    $(function () {
+        $('#register_form').submit(function () {
+            if($(this).valid()) {
                 window.dataLayer = window.dataLayer || [];
                 window.dataLayer.push({
                     'event': 'FormulierIngevuld'

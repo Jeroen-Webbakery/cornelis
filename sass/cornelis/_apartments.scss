@@ -1,0 +1,446 @@
+#apartments {
+  background: #F7F7F7;
+  padding: 100px 0 125px 0;
+
+  @include media-breakpoint-lg() {
+    padding: ratio-vw(100px) 0 ratio-vw(125px) 0;
+  }
+
+  .title {
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 3.75px;
+    line-height: 70px;
+    margin-bottom: 50px;
+  }
+
+  .apartments_number_slider {
+    .slick-list {
+      margin-right: -35px;
+
+      @include media-breakpoint-lg() {
+        margin: - ratio-vw(35px);
+      }
+    }
+
+    .slick-slide {
+      border-top: 1px solid rgba(75, 101, 102, 0.37);
+      transition: all .2s ease-in-out;
+      padding-top: 30px;
+      margin-right: 35px;
+
+      @include media-breakpoint-lg() {
+        padding-top: ratio-vw(30px);
+        margin-right: ratio-vw(35px);
+      }
+
+      .h2, .woningen {
+        transition: all .3s ease-in-out;
+        color: rgba(75, 101, 102, 0.37)
+      }
+
+      .h2, .woningen {
+        font-family: $secondary;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 0.91px;
+        line-height: 20px;
+        font-weight: 700;
+
+        @include media-breakpoint-lg() {
+          font-size: ratio-vw(16px);
+          letter-spacing: ratio-vw(0.91px);
+          line-height: ratio-vw(20px);
+        }
+      }
+
+
+      &.slick-current, &:hover {
+        border-top: 3px solid $black;
+
+        @include media-breakpoint-lg() {
+          border-top: ratio-vw(3px) solid $black;
+        }
+
+        .h2 {
+          color: $black;
+        }
+
+        .woningen {
+          color: $green;
+        }
+      }
+    }
+  }
+
+  .apartments_type_slider {
+    > .slick-list {
+      overflow: visible;
+
+      > .slick-track {
+        > .slick-slide {
+          overflow: visible;
+          visibility: hidden;
+          opacity: 0;
+          transition: all .3s ease-in-out;
+
+
+          &.slick-current {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+
+  .apartments_slider_block {
+
+    .apartments_slider {
+      margin-top: 75px;
+
+      @include media-breakpoint-lg() {
+        margin-top: ratio-vw(75px);
+      }
+
+      .slick-list {
+        overflow: visible;
+        margin-right: -355px;
+
+        @include media-breakpoint-lg() {
+          margin-right: - ratio-vw(355px);
+        }
+
+        .slick-slide {
+          margin-right: 355px;
+
+          @include media-breakpoint-lg() {
+            margin-right: ratio-vw(355px);
+          }
+        }
+      }
+
+      .apartments_slide {
+        position: relative;
+        height: 676px;
+
+        @include media-breakpoint-lg() {
+          height: ratio-vw(676px);
+        }
+
+        .woning_img {
+          height: 676px;
+          width: calc(100% + 305px);
+          object-fit: cover;
+          max-width: unset;
+          position: absolute;
+          margin-left: -305px;
+
+          @include media-breakpoint-lg() {
+            height: ratio-vw(676px);
+            width: calc(100% + #{ratio-vw(305px)});
+            margin-left: - ratio-vw(305px);
+          }
+        }
+
+        .number {
+          position: absolute;
+          top: 0;
+          height: 94px;
+          width: 94px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 45px;
+          line-height: 45px;
+          letter-spacing: 1.69px;
+          font-family: $tertiary;
+          background: $black;
+          color: $white;
+
+          @include media-breakpoint-lg() {
+            height: ratio-vw(94px);
+            width: ratio-vw(94px);
+            font-size: ratio-vw(45px);
+            line-height: ratio-vw(45px);
+            letter-spacing: ratio-vw(1.69px);
+          }
+        }
+
+        .apartment_info {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background: rgba(255, 255, 255, 0.76);
+          padding: 25px 45px;
+          min-width: 710px;
+
+          @include media-breakpoint-lg() {
+            padding: ratio-vw(25px) ratio-vw(45px);
+            min-width: ratio-vw(710px);
+          }
+
+          h4 {
+            font-weight: 500;
+            font-family: $tertiary;
+            font-size: 32px;
+            letter-spacing: 0;
+            line-height: 38px;
+            text-transform: inherit;
+
+            @include media-breakpoint-lg() {
+              font-size: ratio-vw(32px);
+              line-height: ratio-vw(38px);
+            }
+          }
+
+          .details {
+            display: flex;
+            margin: 0 -15px;
+
+            @include media-breakpoint-lg() {
+              margin: 0 - ratio-vw(15px);
+            }
+
+            p {
+              margin: 0 15px;
+              font-size: 16px;
+              letter-spacing: 0;
+              line-height: 30px;
+
+              @include media-breakpoint-lg() {
+                margin: 0 ratio-vw(15px);
+                font-size: ratio-vw(16px);
+                line-height: ratio-vw(30px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .arrows {
+      margin-top: 20px;
+      display: flex;
+      z-index: 2;
+      justify-content: flex-end;
+
+      a {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        text-decoration: none;
+
+        @include media-breakpoint-lg() {
+          width: ratio-vw(50px);
+          height: ratio-vw(50px);
+        }
+
+        &.prev_apartment_slide {
+          background: $white;
+          color: $green;
+        }
+
+        &.next_apartment_slide {
+          background: $green;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .woning_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn {
+      margin-top: -50px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #apartments {
+    .apartments_number_slider {
+      .slick-list {
+        .slick-track {
+
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  #apartments {
+    .apartments_number_arrows {
+      .arrows {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        a {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          position: absolute;
+          transition: all .3s ease-in-out;
+          top: 50%;
+          transform: translateY(-50%);
+
+          @include media-breakpoint-lg() {
+            width: ratio-vw(50px);
+            height: ratio-vw(50px);
+          }
+
+          &.prev_apartments_number_slide {
+            background: $black;
+            color: $white;
+            left: -65px;
+          }
+
+          &.next_apartments_number_slide {
+            background: $black;
+            color: $white;
+            right: -30px;
+          }
+
+          &.slick-disabled {
+            opacity: 0.5
+          }
+        }
+      }
+    }
+
+    .apartments_slider_block {
+      .apartments_slider {
+        .slick-list {
+          margin-right: -325px;
+
+          .slick-slide {
+            margin-right: 325px;
+
+            .apartments_slide {
+              height: 550px;
+
+              .woning_img {
+                height: 550px;
+              }
+
+              .apartment_info {
+                min-width: unset;
+
+                h4 {
+                  font-size: 22px;
+                  line-height: 28px;
+                }
+
+                .details {
+                  p {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .woning_button {
+      justify-content: flex-start;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 650px) {
+  #apartments {
+    .apartments_number_arrows {
+      .arrows {
+        z-index: 2;
+        right: 15px;
+        width: auto;
+        bottom: -50px;
+
+        a {
+          position: relative;
+          top: unset;
+          transform: translateY(0);
+          bottom: -50px;
+          right: 15px;
+
+
+          &.prev_apartments_number_slide {
+            left: 0;
+          }
+
+          &.next_apartments_number_slide {
+            right: unset;
+          }
+
+        }
+      }
+    }
+
+    .apartments_slider_block {
+      .apartments_slider {
+        .slick-list {
+          margin-right: -315px;
+
+          .slick-slide {
+            margin-right: 315px;
+
+            .apartments_slide {
+              height: 494px;
+
+              .woning_img {
+                height: 350px;
+
+              }
+
+              .apartment_info {
+                min-width: unset;
+                padding: 25px 15px;
+                left: -15px;
+                background: $black;
+
+                h4, p {
+                  color: $white;
+                }
+
+                h4 {
+                  font-size: 22px;
+                  line-height: 28px;
+                }
+
+                .details {
+                  p {
+                    font-size: 10px;
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .woning_button {
+      justify-content: center;
+
+      .btn {
+        margin-top: 25px
+      }
+    }
+  }
+}

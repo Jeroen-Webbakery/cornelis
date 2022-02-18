@@ -38,3 +38,14 @@
     }
 
 }
+
+.btn_white {
+    background: $white;
+    color: $black;
+
+    &:hover {
+        i {
+            margin-left: 25px;
+        }
+    }
+}

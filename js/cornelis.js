@@ -17,6 +17,10 @@ $(document).ready(function () {
         $("body, html").toggleClass("no-scroll");
     });
 
+    $(".downloads, .close_overlay").click(function () {
+        $(".overlay").toggleClass("active");
+    });
+
     $(".disclaimer_modal_link").click(function () {
         $(".disclaimer_modal").addClass("active");
         $("body, html").toggleClass("no-scroll");
@@ -31,7 +35,7 @@ $(document).ready(function () {
     document.onkeydown = function (evt) {
         evt = evt || window.event;
         if (evt.keyCode == 27) {
-            $(".modal").removeClass("active");
+            $(".modal, .overlay").removeClass("active");
             $("body, html").removeClass("no-scroll");
         }
     };
@@ -291,6 +295,130 @@ $(document).ready(function () {
                 }
             },
         ]
+    });
+
+    $('.impression_slider').slick({
+        infinite: false,
+        autoplay: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        dots: false,
+        arrows: false,
+    });
+
+
+    $('.apartments_number_slider').slick({
+        infinite: false,
+        autoplay: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        focusOnSelect: true,
+        dots: false,
+        arrows: false,
+        asNavFor: ".apartments_type_slider",
+        prevArrow: $('.prev_apartments_number_slide'),
+        nextArrow: $('.next_apartments_number_slide'),
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: true,
+
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+
+                }
+            },
+        ]
+    });
+
+    $('.apartments_type_slider').slick({
+        infinite: false,
+        autoplay: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        vertical: false,
+        draggable: false,
+        dots: false,
+        arrows: false,
+        asNavFor: ".apartments_number_slider",
+    });
+
+
+    $('.apartments_slider_1').slick({
+        infinite: false,
+        autoplay: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        dots: false,
+        arrows: true,
+        focusOnSelect: true,
+        prevArrow: $('.prev_apartment_slide_1'),
+        nextArrow: $('.next_apartment_slide_1'),
+    });
+
+    $('.apartments_slider_2').slick({
+        infinite: false,
+        autoplay: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        dots: false,
+        arrows: true,
+        focusOnSelect: true,
+        prevArrow: $('.prev_apartment_slide_2'),
+        nextArrow: $('.next_apartment_slide_2'),
+    });
+
+    $('.apartments_slider_3').slick({
+        infinite: false,
+        autoplay: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        dots: false,
+        arrows: true,
+        focusOnSelect: true,
+        prevArrow: $('.prev_apartment_slide_3'),
+        nextArrow: $('.next_apartment_slide_3'),
+    });
+
+    $('.apartments_slider_4').slick({
+        infinite: false,
+        autoplay: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        dots: false,
+        arrows: true,
+        focusOnSelect: true,
+        prevArrow: $('.prev_apartment_slide_4'),
+        nextArrow: $('.next_apartment_slide_4'),
+    });
+
+    $('.apartments_slider_5').slick({
+        infinite: false,
+        autoplay: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        dots: false,
+        arrows: true,
+        focusOnSelect: true,
+        prevArrow: $('.prev_apartment_slide_5'),
+        nextArrow: $('.next_apartment_slide_5'),
     });
 });
 

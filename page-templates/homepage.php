@@ -43,7 +43,8 @@ get_header();
                 </div>
                 <div class="col-sm-12 col-lg-7 column_right px-0" data-aos="fade-left">
                     <video class="header_image" playsinline muted autoplay loop>
-                        <source src="<?php echo get_template_directory_uri(); ?>/assets/video/cornelis_header_video.mp4" type="video/mp4">
+                        <source src="<?php echo get_template_directory_uri(); ?>/assets/video/cornelis_header_videoe.mp4"
+                                type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <img class="wood"
@@ -189,14 +190,17 @@ get_header();
                 </div>
             </div>
             <div class="row second_row" data-aos="fade-up">
-                <div class="col-sm-12 col-md-5 col-lg-5 col_left"
-                     style="background-image:url(<?php echo esc_url(get_field('a_img_left')); ?>);">
-                    <img class="wood"
-                         src="<?php echo get_template_directory_uri(); ?>/assets/images/wood.jpg"
-                         alt="Wood">
-                </div>
-                <div class="col-sm-12 col-md-7 col-lg-7 col_right"
-                     style="background-image:url(<?php echo esc_url(get_field('a_img_right')); ?>);">
+                <div class="col-sm-12">
+                    <div class="impression_slider">
+                        <?php
+                        $afbeelding_slider = get_field('afbeelding_slider');
+                        if ($afbeelding_slider) : ?>
+                            <?php foreach ($afbeelding_slider as $image) : ?>
+                                <img src="<?php echo esc_url($image['sizes']['large']); ?>"
+                                     alt="<?php echo esc_attr($image['alt']); ?>"/>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
             <div class="row third_row">
@@ -208,6 +212,9 @@ get_header();
             </div>
         </div>
     </section>
+
+
+<?php get_template_part('partials/apartments', 'content'); ?>
 
     <section id="gevelpark">
         <div class="container">
@@ -358,6 +365,22 @@ get_header();
         </div>
     </section>
 
+    <section id="faq_downloads">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6 col_left">
+                    <h3 class="h1">FAQ & Downloads</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipicing elit, sed do eiusmod tempor incidiunt ut labore
+                        et.</p>
+                </div>
+                <div class="col-sm-12 col-lg-6 col_right">
+                    <a class="downloads btn btn_gray">Direct naar faq & downloads <i
+                                class="fal fa-long-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -442,6 +465,28 @@ get_header();
                     <script src='https://www.google.com/recaptcha/api.js'></script>
 
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="makelaars">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3><?php the_field('m_title'); ?></h3>
+                </div>
+            </div>
+            <div class="row makelaars_overzicht">
+                <?php if (have_rows('makelaar')) : ?>
+                    <?php while (have_rows('makelaar')) :
+                        the_row(); ?>
+                        <div class="col-sm-12 col-md-6 col-lg-2 makelaar mb-5">
+                            <?= !empty($img = get_sub_field('foto')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'foto']) : '' ?>
+                            <p class="name"><?php the_sub_field('naam'); ?></p>
+                            <p class="function"><?php the_sub_field('functie'); ?></p>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
             </div>
         </div>
     </section>

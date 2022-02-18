@@ -159,6 +159,14 @@
     .second_row {
       margin-top: 50px;
 
+      .impression_slider {
+        height: 300px;
+
+        img {
+          height: 300px;
+        }
+      }
+
       .col_left, .col_right {
         height: 300px;
 
@@ -359,6 +367,16 @@
       left: unset;
       top: -35px;
       bottom: unset;
+    }
+  }
+
+  #faq_downloads {
+    padding-top: 50px;
+
+    .col_right {
+      .btn {
+        font-size: 14px;
+      }
     }
   }
 

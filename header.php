@@ -96,7 +96,7 @@ $container = get_theme_mod('understrap_container_type');
                         'fallback_cb' => '',
                         'menu_id' => 'main-menu',
                         'depth' => 3,
-                        'walker' => new Understrap_WP_Bootstrap_Navwalker(),
+                        'walker' => 'WP_Bootstrap_Navwalker',
                     )
                 );
                 ?>

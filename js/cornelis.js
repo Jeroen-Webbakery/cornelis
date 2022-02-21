@@ -315,6 +315,8 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplaySpeed: 3000,
         focusOnSelect: true,
+        draggable: false,
+        swipe: false,
         dots: false,
         arrows: false,
         asNavFor: ".apartments_type_slider",
@@ -348,8 +350,8 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 3000,
-        vertical: false,
         draggable: false,
+        swipe: false,
         dots: false,
         arrows: false,
         asNavFor: ".apartments_number_slider",
@@ -358,7 +360,7 @@ $(document).ready(function () {
 
     $('.apartments_slider_1').slick({
         infinite: false,
-        autoplay: false,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 3000,
@@ -371,7 +373,7 @@ $(document).ready(function () {
 
     $('.apartments_slider_2').slick({
         infinite: false,
-        autoplay: false,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 3000,
@@ -384,7 +386,7 @@ $(document).ready(function () {
 
     $('.apartments_slider_3').slick({
         infinite: false,
-        autoplay: false,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 3000,
@@ -397,7 +399,7 @@ $(document).ready(function () {
 
     $('.apartments_slider_4').slick({
         infinite: false,
-        autoplay: false,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 3000,
@@ -410,7 +412,7 @@ $(document).ready(function () {
 
     $('.apartments_slider_5').slick({
         infinite: false,
-        autoplay: false,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 3000,

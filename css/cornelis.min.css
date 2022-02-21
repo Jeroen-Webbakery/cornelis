@@ -6131,6 +6131,13 @@ body.no-scroll::before {
   visibility: visible;
 }
 
+.slick-arrow {
+  outline: none;
+}
+.slick-arrow.slick-disabled {
+  opacity: 0.8;
+}
+
 .slick-dots {
   position: absolute;
   bottom: 15px;
@@ -7566,10 +7573,12 @@ body.no-scroll::before {
     margin-right: 315px;
   }
   #apartments .apartments_slider_block .apartments_slider .slick-list .slick-slide .apartments_slide {
-    height: 494px;
+    height: 550px;
   }
   #apartments .apartments_slider_block .apartments_slider .slick-list .slick-slide .apartments_slide .woning_img {
+    width: calc(100% + 30px);
     height: 350px;
+    margin-left: -30px;
   }
   #apartments .apartments_slider_block .apartments_slider .slick-list .slick-slide .apartments_slide .apartment_info {
     min-width: unset;
@@ -7583,6 +7592,9 @@ body.no-scroll::before {
   #apartments .apartments_slider_block .apartments_slider .slick-list .slick-slide .apartments_slide .apartment_info h4 {
     font-size: 22px;
     line-height: 28px;
+  }
+  #apartments .apartments_slider_block .apartments_slider .slick-list .slick-slide .apartments_slide .apartment_info .details {
+    display: block;
   }
   #apartments .apartments_slider_block .apartments_slider .slick-list .slick-slide .apartments_slide .apartment_info .details p {
     font-size: 10px;
@@ -7675,9 +7687,9 @@ body.no-scroll::before {
     transition: all 0.3s linear;
     width: 100%;
     background: #fff;
-    height: 0;
+    height: auto;
     overflow: hidden;
-    max-height: 425px;
+    max-height: 0;
   }
   #navbarNavDropdown #main-menu {
     margin-left: 0 !important;
@@ -7694,7 +7706,7 @@ body.no-scroll::before {
   }
   #navbarNavDropdown.active {
     transform: translateY(0);
-    height: 100%;
+    max-height: 100vh;
   }
 
   #header {
@@ -25464,9 +25476,9 @@ footer .col_left p {
     transition: all 0.3s linear;
     width: 100%;
     background: #fff;
-    height: 0;
+    height: auto;
     overflow: hidden;
-    max-height: 425px;
+    max-height: 0;
   }
   #navbarNavDropdown #main-menu {
     margin-left: 0 !important;
@@ -25483,7 +25495,7 @@ footer .col_left p {
   }
   #navbarNavDropdown.active {
     transform: translateY(0);
-    height: 100%;
+    max-height: 100vh;
   }
 
   #header {

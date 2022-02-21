@@ -49,9 +49,9 @@
     transition: all .3s linear;
     width: 100%;
     background: $white;
-    height: 0;
+    height: auto;
     overflow: hidden;
-    max-height: 425px;
+    max-height: 0;
 
     #main-menu {
       margin-left: 0 !important;
@@ -71,7 +71,7 @@
 
     &.active {
       transform: translateY(0);
-      height: 100%;
+      max-height: 100vh;
 
     }
   }

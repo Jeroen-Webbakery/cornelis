@@ -365,16 +365,15 @@ get_header();
         </div>
     </section>
 
-    <section id="faq_downloads">
+    <section id="faq_downloads"  data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-lg-6 col_left">
-                    <h3 class="h1">FAQ & Downloads</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipicing elit, sed do eiusmod tempor incidiunt ut labore
-                        et.</p>
+                    <h3 class="h1"><?php the_field('f_title'); ?></h3>
+                    <p><?php the_field('f_content') ; ?>></p>
                 </div>
                 <div class="col-sm-12 col-lg-6 col_right">
-                    <a class="downloads btn btn_gray">Direct naar faq & downloads <i
+                    <a class="downloads btn btn_gray"><?php the_field('f_button'); ?> <i
                                 class="fal fa-long-arrow-right"></i></a>
                 </div>
             </div>
@@ -469,7 +468,7 @@ get_header();
         </div>
     </section>
 
-    <section id="makelaars">
+    <section id="makelaars" data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -480,7 +479,7 @@ get_header();
                 <?php if (have_rows('makelaar')) : ?>
                     <?php while (have_rows('makelaar')) :
                         the_row(); ?>
-                        <div class="col-sm-12 col-md-6 col-lg-2 makelaar mb-5">
+                        <div class="col-sm-12 col-md-6 col-lg-2 makelaar mb-5 mb-lg-0">
                             <?= !empty($img = get_sub_field('foto')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'foto']) : '' ?>
                             <p class="name"><?php the_sub_field('naam'); ?></p>
                             <p class="function"><?php the_sub_field('functie'); ?></p>

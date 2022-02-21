@@ -76,6 +76,14 @@ body {
   }
 }
 
+.slick-arrow {
+  outline: none;
+
+  &.slick-disabled {
+    opacity: 0.8;
+  }
+}
+
 .slick-dots {
   position: absolute;
   bottom: 15px;

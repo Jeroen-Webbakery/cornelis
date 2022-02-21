@@ -400,10 +400,12 @@
             margin-right: 315px;
 
             .apartments_slide {
-              height: 494px;
+              height: 550px;
 
               .woning_img {
+                width: calc(100% + 30px);
                 height: 350px;
+                margin-left: -30px;
 
               }
 
@@ -423,6 +425,8 @@
                 }
 
                 .details {
+                  display: block;
+
                   p {
                     font-size: 10px;
 

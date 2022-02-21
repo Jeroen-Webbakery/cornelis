@@ -365,6 +365,7 @@ get_header();
         </div>
     </section>
 
+<?php if ($button_tekst = get_field('f_button')) : ?>
     <section id="faq_downloads"  data-aos="fade-up">
         <div class="container">
             <div class="row">
@@ -373,12 +374,13 @@ get_header();
                     <p><?php the_field('f_content') ; ?></p>
                 </div>
                 <div class="col-sm-12 col-lg-6 col_right">
-                    <a class="downloads btn btn_gray"><?php the_field('f_button'); ?> <i
+                    <a class="downloads btn btn_gray"><?= $button_tekst ?> <i
                                 class="fal fa-long-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
+<?php endif; ?>
 
     <section id="contact">
         <div class="container">

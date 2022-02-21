@@ -370,7 +370,7 @@ get_header();
             <div class="row">
                 <div class="col-sm-12 col-lg-6 col_left">
                     <h3 class="h1"><?php the_field('f_title'); ?></h3>
-                    <p><?php the_field('f_content') ; ?>></p>
+                    <p><?php the_field('f_content') ; ?></p>
                 </div>
                 <div class="col-sm-12 col-lg-6 col_right">
                     <a class="downloads btn btn_gray"><?php the_field('f_button'); ?> <i

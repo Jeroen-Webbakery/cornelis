@@ -43,7 +43,7 @@ get_header();
                 </div>
                 <div class="col-sm-12 col-lg-7 column_right px-0" data-aos="fade-left">
                     <video class="header_image" playsinline muted autoplay loop>
-                        <source src="<?php echo get_template_directory_uri(); ?>/assets/video/cornelis_header_videoe.mp4"
+                        <source src="<?php echo get_template_directory_uri(); ?>/assets/video/cornelis_header_video.mp4"
                                 type="video/mp4">
                         Your browser does not support the video tag.
                     </video>

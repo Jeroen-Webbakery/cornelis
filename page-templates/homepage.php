@@ -303,7 +303,7 @@ get_header();
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-lg-5 col_left">
-                            <?php if ($title = get_field('video_content')) : ?>
+                            <?php if ($title = get_field('video_title')) : ?>
                                 <h2><?= $title ?></h2>
                             <?php endif; ?>
 

@@ -1015,13 +1015,14 @@ body {
 
   .col_left {
     h3 {
-      font-size: 100px;
+      text-transform: uppercase;
+      font-size: 90px;
       letter-spacing: 3.75px;
-      line-height: 70px;
+      line-height: 60px;
 
       @include media-breakpoint-lg() {
-        font-size: ratio-vw(100px);
-        line-height: ratio-vw(70px);
+        font-size: ratio-vw(90px);
+        line-height: ratio-vw(60px);
       }
     }
 
@@ -1266,6 +1267,7 @@ body {
         letter-spacing: 2.06px;
         line-height: 40px;
         margin-bottom: 25px;
+        text-transform: uppercase;
 
         @include media-breakpoint-lg() {
           font-size: ratio-vw(55px);

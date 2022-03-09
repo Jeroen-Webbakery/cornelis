@@ -6987,14 +6987,15 @@ body.no-scroll {
   padding-bottom: 50px;
 }
 #faq_downloads .col_left h3 {
-  font-size: 100px;
+  text-transform: uppercase;
+  font-size: 90px;
   letter-spacing: 3.75px;
-  line-height: 70px;
+  line-height: 60px;
 }
 @media (max-width: 1799px) and (min-width: 1024px) {
   #faq_downloads .col_left h3 {
-    font-size: 5.5555555556vw;
-    line-height: 3.8888888889vw;
+    font-size: 5vw;
+    line-height: 3.3333333333vw;
   }
 }
 #faq_downloads .col_left p {
@@ -7203,6 +7204,7 @@ body.no-scroll {
   letter-spacing: 2.06px;
   line-height: 40px;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 @media (max-width: 1799px) and (min-width: 1024px) {
   .overlay .col_left .content h3 {

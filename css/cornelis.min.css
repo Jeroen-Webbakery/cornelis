@@ -8131,6 +8131,7 @@ body.no-scroll {
   letter-spacing: 2.06px;
   line-height: 40px;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 #video_overview .video-container {
   position: fixed;

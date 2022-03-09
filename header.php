@@ -24,6 +24,7 @@ $container = get_theme_mod('understrap_container_type');
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/slick.css">
     <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slick.min.js"></script>
     <link rel="stylesheet"  href="<?php echo get_stylesheet_directory_uri(); ?>/css/aos.css">
+    <link rel="stylesheet"  href="<?php echo get_stylesheet_directory_uri(); ?>/css/all.min.css">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

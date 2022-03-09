@@ -135,9 +135,12 @@
                         <?php while ( have_rows( 'downloads', 'options' ) ) :
                             the_row(); ?>
 
+                        <div class="mb-2">
                             <?php if ( $bestand = get_sub_field( 'bestand', 'options' ) ) : ?>
-                            <a href="<?php esc_url( $bestand ); ?>" target="_blank">- <?php the_sub_field('documentnaam', 'options'); ?> </a>
+                            <a href="<?php esc_url( $bestand ); ?>" target="_blank"><?php the_sub_field('documentnaam', 'options'); ?> </a>
+                            <p><?php the_sub_field('description', 'options'); ?></p>
                         <?php endif; ?>
+                        </div>
 
 
                         <?php endwhile; ?>

@@ -31,12 +31,18 @@ $(document).ready(function () {
         $("body, html").removeClass("no-scroll");
     });
 
+    $(".close_video").click(function () {
+        $(".video-container").removeClass("active");
+        $("body, html").removeClass("no-scroll");
+    });
+
 
     document.onkeydown = function (evt) {
         evt = evt || window.event;
         if (evt.keyCode == 27) {
             $(".modal, .overlay").removeClass("active");
             $("body, html").removeClass("no-scroll");
+            $(".video-container").removeClass("active");
         }
     };
 
@@ -306,7 +312,6 @@ $(document).ready(function () {
         dots: false,
         arrows: false,
     });
-
 
     $('.apartments_number_slider').slick({
         infinite: false,

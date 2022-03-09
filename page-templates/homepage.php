@@ -299,68 +299,73 @@ get_header();
             </div>
         </div>
         <?php if (have_rows('videos')) : ?>
-        <div id="video_overview">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-5 col_left">
-                        <h2><?php the_field('video_title'); ?></h2>
-                    </div>
-                    <div class="col-sm-12 col-lg-6 offset-lg-1 col_right">
-                        <p><?php the_field('video_content'); ?></p>
-                    </div>
-                    <div class="col-sm-12 video_col">
+            <div id="video_overview">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-5 col_left">
+                            <?php if ($title = get_field('video_content')) : ?>
+                                <h2><?= $title ?></h2>
+                            <?php endif; ?>
 
-                        <div class="video_overview row">
+                        </div>
+                        <div class="col-sm-12 col-lg-6 offset-lg-1 col_right">
+                            <?php if ($content = get_field('video_content')) : ?>
+                                <p><?= $content ?></p>
+                            <?php endif; ?>
+                        </div>
+                        <div class="col-sm-12 video_col">
+
+                            <div class="video_overview row">
+                                <?php
+                                $x = 1;
+                                while (have_rows('videos')) :
+                                    the_row();
+                                    ?>
+
+                                    <div class="col-sm-12 col-lg-4 slide">
+                                        <div class="thumbnail_box thumbnail_<?= $x ?>">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path d="M356.5 235.5C363.6 239.9 368 247.6 368 256C368 264.4 363.6 272.1 356.5 276.5L212.5 364.5C205.1 369 195.8 369.2 188.3 364.9C180.7 360.7 176 352.7 176 344V167.1C176 159.3 180.7 151.3 188.3 147.1C195.8 142.8 205.1 142.1 212.5 147.5L356.5 235.5zM192 168V344C192 346.9 193.6 349.6 196.1 350.1C198.6 352.4 201.7 352.3 204.2 350.8L348.2 262.8C350.6 261.4 352 258.8 352 256C352 253.2 350.6 250.6 348.2 249.2L204.2 161.2C201.7 159.7 198.6 159.6 196.1 161C193.6 162.4 192 165.1 192 168V168zM0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 496C388.5 496 496 388.5 496 256C496 123.5 388.5 16 256 16C123.5 16 16 123.5 16 256C16 388.5 123.5 496 256 496z"/>
+                                            </svg>
+                                            <?= !empty($img = get_sub_field('thumbnail')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'thumbnail']) : '' ?>
+                                        </div>
+                                        <p class="subtitle"><?php the_sub_field('subtitle'); ?></p>
+                                        <p class="title"><?php the_sub_field('title'); ?></p>
+                                        <script>
+                                            $(".thumbnail_<?= $x ?>").click(function () {
+                                                $(".video_<?= $x ?>").addClass("active");
+                                                $("body, html").addClass("no-scroll");
+                                            });
+                                        </script>
+                                    </div>
+
+
+                                    <?php
+                                    $x++;
+                                endwhile;
+                                ?>
+
+                            </div>
                             <?php
                             $x = 1;
                             while (have_rows('videos')) :
                                 the_row();
                                 ?>
 
-                                <div class="col-sm-12 col-lg-4 slide">
-                                    <div class="thumbnail_box thumbnail_<?= $x ?>">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                            <path d="M356.5 235.5C363.6 239.9 368 247.6 368 256C368 264.4 363.6 272.1 356.5 276.5L212.5 364.5C205.1 369 195.8 369.2 188.3 364.9C180.7 360.7 176 352.7 176 344V167.1C176 159.3 180.7 151.3 188.3 147.1C195.8 142.8 205.1 142.1 212.5 147.5L356.5 235.5zM192 168V344C192 346.9 193.6 349.6 196.1 350.1C198.6 352.4 201.7 352.3 204.2 350.8L348.2 262.8C350.6 261.4 352 258.8 352 256C352 253.2 350.6 250.6 348.2 249.2L204.2 161.2C201.7 159.7 198.6 159.6 196.1 161C193.6 162.4 192 165.1 192 168V168zM0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 496C388.5 496 496 388.5 496 256C496 123.5 388.5 16 256 16C123.5 16 16 123.5 16 256C16 388.5 123.5 496 256 496z"/>
-                                        </svg>
-                                        <?= !empty($img = get_sub_field('thumbnail')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'thumbnail']) : '' ?>
-                                    </div>
-                                    <p class="subtitle"><?php the_sub_field('subtitle'); ?></p>
-                                    <p class="title"><?php the_sub_field('title'); ?></p>
-                                    <script>
-                                        $(".thumbnail_<?= $x ?>").click(function () {
-                                            $(".video_<?= $x ?>").addClass("active");
-                                            $("body, html").addClass("no-scroll");
-                                        });
-                                    </script>
+                                <div class="video-container video_<?= $x ?>">
+                                    <a class="close_video">X</a>
+                                    <?php the_sub_field('video_url'); ?>">
                                 </div>
-
 
                                 <?php
                                 $x++;
                             endwhile;
                             ?>
-
                         </div>
-                        <?php
-                        $x = 1;
-                        while (have_rows('videos')) :
-                            the_row();
-                            ?>
-
-                            <div class="video-container video_<?= $x ?>">
-                                <a class="close_video">X</a>
-                                <?php the_sub_field('video_url'); ?>">
-                            </div>
-
-                            <?php
-                            $x++;
-                        endwhile;
-                        ?>
                     </div>
                 </div>
             </div>
-        </div>
         <?php endif; ?>
         <div class="row">
             <div class="col-sm-12 position-relative" data-aos="fade-down">

@@ -7195,6 +7195,9 @@ body.no-scroll {
   align-items: center;
   justify-content: center;
 }
+.overlay .col_left .content {
+  max-width: 650px;
+}
 .overlay .col_left .content h3 {
   font-size: 55px;
   letter-spacing: 2.06px;

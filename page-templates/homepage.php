@@ -356,11 +356,12 @@ get_header();
                             <?php
                             $x++;
                         endwhile;
-                        endif; ?>
+                        ?>
                     </div>
                 </div>
             </div>
         </div>
+        <?php endif; ?>
         <div class="row">
             <div class="col-sm-12 position-relative" data-aos="fade-down">
                 <div class="locatie_slider">

@@ -212,7 +212,7 @@ function check_interest_form()
         Form::set_success();
         Form::add_message(__('Formulier succesvol verstuurd!', 'cornelis')); ?>
         <script>
-            window.dataLayer = window.dataLayer || [];
+            dataLayer = window.dataLayer || [];
             dataLayer.push({'event': 'formulier_ingevuld'});
         </script>
 

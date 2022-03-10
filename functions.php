@@ -210,8 +210,15 @@ function check_interest_form()
         unset($_POST);
 
         Form::set_success();
-        Form::add_message(__('Formulier succesvol verstuurd!', 'cornelis'));
+        Form::add_message(__('Formulier succesvol verstuurd!', 'cornelis')); ?>
 
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+                'event': 'FormulierIngevuld'
+            });
+        </script>
+    <?php
     }
 }
 

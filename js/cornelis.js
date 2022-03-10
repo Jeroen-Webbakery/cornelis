@@ -62,6 +62,7 @@ $(document).ready(function () {
     $(function () {
         $('#register_form').submit(function () {
             if($(this).valid()) {
+                console.log("FormulierIngevuld");
                 window.dataLayer = window.dataLayer || [];
                 window.dataLayer.push({
                     'event': 'FormulierIngevuld'

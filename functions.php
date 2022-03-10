@@ -216,6 +216,8 @@ function check_interest_form()
             window.dataLayer.push({
                 'event': 'FormulierIngevuld'
             });
+            dataLayer = window.dataLayer || [];
+            dataLayer.push({'event': 'formulier_ingevuld'});
         </script>
 
     <?php

@@ -66,6 +66,9 @@ $(document).ready(function () {
             window.dataLayer.push({
                 'event': 'FormulierIngevuld'
             });
+            dataLayer = window.dataLayer || [];
+            dataLayer.push({'event': 'formulier_ingevuld'});
+
 
         });
     });

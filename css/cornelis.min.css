@@ -8084,6 +8084,7 @@ body.no-scroll {
 @media (max-width: 1799px) and (min-width: 1024px) {
   #video_overview .video_overview {
     margin: 3.8888888889vw -0.5555555556vw 0 -0.5555555556vw;
+    min-width: 72.2222222222vw;
   }
 }
 #video_overview .video_overview .thumbnail_box {
@@ -8097,6 +8098,8 @@ body.no-scroll {
 @media (max-width: 1799px) and (min-width: 1024px) {
   #video_overview .video_overview .thumbnail_box {
     margin-bottom: 1.3888888889vw;
+    height: 23.3333333333vw;
+    width: 23.3333333333vw;
   }
 }
 #video_overview .video_overview .thumbnail_box img {
@@ -8104,6 +8107,12 @@ body.no-scroll {
   width: 420px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  #video_overview .video_overview .thumbnail_box img {
+    height: 23.3333333333vw;
+    width: 23.3333333333vw;
+  }
 }
 #video_overview .video_overview .thumbnail_box svg {
   width: 118px;
@@ -8124,14 +8133,26 @@ body.no-scroll {
   line-height: 19px;
   text-transform: uppercase;
 }
+@media (max-width: 1799px) and (min-width: 1024px) {
+  #video_overview .video_overview .subtitle {
+    font-size: 0.8888888889vw;
+    line-height: 1.0555555556vw;
+  }
+}
 #video_overview .video_overview .title {
   font-family: "SF Movie Poster", sans-serif;
   font-size: 55px;
   font-weight: bold;
   letter-spacing: 2.06px;
-  line-height: 40px;
+  line-height: 55px;
   margin-bottom: 0;
   text-transform: uppercase;
+}
+@media (max-width: 1799px) and (min-width: 1024px) {
+  #video_overview .video_overview .title {
+    font-size: 3.0555555556vw;
+    line-height: 3.0555555556vw;
+  }
 }
 #video_overview .video-container {
   position: fixed;

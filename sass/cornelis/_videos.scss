@@ -51,6 +51,7 @@
 
     @include media-breakpoint-lg() {
       margin: ratio-vw(70px) ratio-vw(-10px) 0 ratio-vw(-10px);
+      min-width: ratio-vw(1300px);
     }
 
     .thumbnail_box {
@@ -63,12 +64,19 @@
 
       @include media-breakpoint-lg() {
         margin-bottom: ratio-vw(25px);
+        height: ratio-vw(420px);
+        width: ratio-vw(420px);
       }
 
       img {
         height: 420px;
         width: 420px;
         object-fit: cover;
+
+        @include media-breakpoint-lg() {
+          height: ratio-vw(420px);
+          width: ratio-vw(420px);
+        }
       }
 
       svg {
@@ -90,6 +98,11 @@
       letter-spacing: 0.67px;
       line-height: 19px;
       text-transform: uppercase;
+
+      @include media-breakpoint-lg() {
+        font-size: ratio-vw(16px);
+        line-height: ratio-vw(19px);
+      }
     }
 
     .title {
@@ -97,9 +110,14 @@
       font-size: 55px;
       font-weight: bold;
       letter-spacing: 2.06px;
-      line-height: 40px;
+      line-height: 55px;
       margin-bottom: 0;
       text-transform: uppercase;
+
+      @include media-breakpoint-lg() {
+        font-size: ratio-vw(55px);
+        line-height: ratio-vw(55px);
+      }
     }
   }
 

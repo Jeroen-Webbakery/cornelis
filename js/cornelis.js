@@ -63,7 +63,7 @@ $(document).ready(function () {
         $('#register_form').submit(function () {
             console.log("FormulierIngevuld");
             dataLayer = window.dataLayer || [];
-            dataLayer.push({'event': 'formulier_ingevuld'});
+            dataLayer.push({'event': 'FormulierIngevuld'});
 
         });
     });

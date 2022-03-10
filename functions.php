@@ -211,13 +211,11 @@ function check_interest_form()
 
         Form::set_success();
         Form::add_message(__('Formulier succesvol verstuurd!', 'cornelis')); ?>
-
         <script>
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-                'event': 'FormulierIngevuld'
-            });
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({'event': 'FormulierIngevuld'});
         </script>
+
     <?php
     }
 }

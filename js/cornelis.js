@@ -47,11 +47,11 @@ $(document).ready(function () {
     };
 
 
-    $(document).ready(function(){
-        $('#register_form .form-group input[type="text"], #register_form .form-group input[type="email"], #register_form .form-group input[type="tel"], #register_form .form-group input[type="chechbox"]').blur(function(){
-            if(!$(this).val()){
+    $(document).ready(function () {
+        $('#register_form .form-group input[type="text"], #register_form .form-group input[type="email"], #register_form .form-group input[type="tel"], #register_form .form-group input[type="chechbox"]').blur(function () {
+            if (!$(this).val()) {
                 $(this).addClass("error");
-            } else{
+            } else {
                 $(this).removeClass("error");
 
 
@@ -61,25 +61,22 @@ $(document).ready(function () {
 
     $(function () {
         $('#register_form').submit(function () {
-            if($(this).valid()) {
-                console.log("FormulierIngevuld");
-                window.dataLayer = window.dataLayer || [];
-                window.dataLayer.push({
-                    'event': 'FormulierIngevuld'
-                });
-            }
+            console.log("FormulierIngevuld");
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'FormulierIngevuld'
+            });
+
         });
     });
 
-    window.onload = function() {
+    window.onload = function () {
         var $recaptcha = document.querySelector('#g-recaptcha-response');
 
-        if($recaptcha) {
+        if ($recaptcha) {
             $recaptcha.setAttribute("required", "required");
         }
     };
-
-
 
 
     /* Hamburger menu */

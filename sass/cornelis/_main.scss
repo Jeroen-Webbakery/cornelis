@@ -1282,6 +1282,13 @@ body {
         text-decoration: none;
         margin-bottom: 5px;
         font-weight: 600;
+        border-bottom: 1px solid $trans;
+        width: max-content;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          border-color: $black;
+        }
       }
     }
   }

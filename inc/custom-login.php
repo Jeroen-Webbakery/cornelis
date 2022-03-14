@@ -4,13 +4,14 @@ function eigen_login_logo()
 { ?>
     <style type="text/css">
         .login {
-            background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2021/11/header-1.jpg);
-            background-size: cover !important;
+            background-color: #fafaf9;
             position: relative;
         }
 
-        .login form {
-            background: rgba(255, 255, 255, 0.8) !important;
+        #loginform {
+            background: unset;
+            border: none;
+            box-shadow: none;
         }
 
         .wp-core-ui .button-primary {

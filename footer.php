@@ -131,17 +131,27 @@
                 <?php if ( $overlay_title = get_field( 'overlay_title', 'options' ) ) : ?>
                     <h3 class="h1"><?php echo esc_html( $overlay_title ); ?></h3>
                 <?php endif; ?>
-                    <?php if ( have_rows( 'downloads', 'options' ) ) : ?>
-                        <?php while ( have_rows( 'downloads', 'options' ) ) :
+
+                    <?php if ( have_rows( 'downloads_overview', 'options' ) ) : ?>
+                        <?php while ( have_rows( 'downloads_overview', 'options' ) ) :
                             the_row(); ?>
 
-                        <div class="mb-2">
-                            <?php if ( $bestand = get_sub_field( 'bestand', 'options' ) ) : ?>
-                            <a href="<?= $bestand ?>" target="_blank"><?php the_sub_field('documentnaam', 'options'); ?><i class="fa-solid fa-file-arrow-down ml-2"></i> </a>
-                            <p><?php the_sub_field('description', 'options'); ?></p>
-                        <?php endif; ?>
-                        </div>
-
+                            <div class="js-accordion-item accordion__item">
+                                <div class="accordionButton accordion-header js-accordion-header accordion__caption"><p class="mb-0 font-weight-bold"><?php the_sub_field('title', 'options'); ?></p> </div>
+                                <div class="accordionContent accordion-body__contents accordion__content">
+                                    <?php if ( have_rows( 'downloads', 'options' ) ) : ?>
+                                        <?php while ( have_rows( 'downloads', 'options' ) ) :
+                                            the_row(); ?>
+                                            <div class="mb-2">
+                                                <?php if ( $bestand = get_sub_field( 'bestand', 'options' ) ) : ?>
+                                                    <a href="<?= $bestand ?>" target="_blank"><?php the_sub_field('documentnaam', 'options'); ?><i class="fa-solid fa-file-arrow-down ml-2"></i> </a>
+                                                    <p><?php the_sub_field('description', 'options'); ?></p>
+                                                <?php endif; ?>
+                                            </div>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
 
                         <?php endwhile; ?>
                     <?php endif; ?>

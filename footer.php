@@ -145,7 +145,9 @@
                                             <div class="mb-2">
                                                 <?php if ( $bestand = get_sub_field( 'bestand', 'options' ) ) : ?>
                                                     <a href="<?= $bestand ?>" target="_blank"><?php the_sub_field('documentnaam', 'options'); ?> - ( Download <i class="fa-solid fa-file-arrow-down ml-2"></i> )</a>
+                                                    <?php if(!empty(get_sub_field('description', 'options'))) : ?>
                                                     <p><?php the_sub_field('description', 'options'); ?></p>
+                                                    <?php endif; ?>
                                                 <?php endif; ?>
                                             </div>
                                         <?php endwhile; ?>

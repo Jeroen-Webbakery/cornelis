@@ -173,7 +173,7 @@
 }
 @font-face {
   font-family: "SF Movie Poster";
-  src: url("../fonts/SF-Movie-Poster-Bold.ttf") format("truetype");
+  src: url("../fonts/SF-Movie-Poster-Bold2.ttf") format("truetype"), url("../fonts/SF-Movie-Poster-Bold2.otf") format("opentype");
   font-weight: 700;
   font-display: swap;
 }
@@ -8152,6 +8152,13 @@ body.no-scroll {
   #contact .col_right p {
     width: 100%;
   }
+
+  .overlay .col_left .content {
+    max-width: 100%;
+  }
+  .overlay .col_left .content .accordion-header {
+    padding: 20px 30px 20px 15px;
+  }
 }
 #video_overview {
   background: #F7F7F7;
@@ -9171,5 +9178,12 @@ footer .col_left p {
   }
   #contact .col_right p {
     width: 100%;
+  }
+
+  .overlay .col_left .content {
+    max-width: 100%;
+  }
+  .overlay .col_left .content .accordion-header {
+    padding: 20px 30px 20px 15px;
   }
 }

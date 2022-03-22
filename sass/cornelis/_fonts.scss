@@ -6,7 +6,8 @@
 }
 @font-face {
 	font-family: 'SF Movie Poster';
-	src: url('../fonts/SF-Movie-Poster-Bold.ttf') format('truetype');
+	src: url('../fonts/SF-Movie-Poster-Bold2.ttf') format('truetype'),
+		url('../fonts/SF-Movie-Poster-Bold2.otf') format('opentype');
 	font-weight: 700;
 	font-display: swap;
 }

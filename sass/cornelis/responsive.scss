@@ -541,4 +541,16 @@
       }
     }
   }
+
+  .overlay {
+    .col_left {
+      .content {
+        max-width: 100%;
+
+        .accordion-header {
+          padding: 20px 30px 20px 15px;
+        }
+      }
+    }
+  }
 }

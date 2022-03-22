@@ -21,6 +21,10 @@ $(document).ready(function () {
         $(".overlay").toggleClass("active");
     });
 
+    if(window.location.href === "https://cornelis-amsterdam.nl/?downloads") {
+        $(".overlay").toggleClass("active");
+    }
+
     $(".disclaimer_modal_link").click(function () {
         $(".disclaimer_modal").addClass("active");
         $("body, html").toggleClass("no-scroll");

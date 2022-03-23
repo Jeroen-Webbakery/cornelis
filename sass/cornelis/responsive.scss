@@ -446,6 +446,21 @@
   .makkelaar_logo {
     margin-top: 0;
   }
+
+  .overlay {
+    .col_left {
+      padding: 50px 30px;
+
+      .content {
+        max-width: 100%;
+
+
+        .accordion-header {
+          padding: 20px 30px 20px 15px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1025px) and (min-width: 650px) {
@@ -538,21 +553,6 @@
     .col_right {
       p {
         width: 100%;
-      }
-    }
-  }
-
-  .overlay {
-    .col_left {
-      padding: 50px 30px;
-      
-      .content {
-        max-width: 100%;
-
-
-        .accordion-header {
-          padding: 20px 30px 20px 15px;
-        }
       }
     }
   }

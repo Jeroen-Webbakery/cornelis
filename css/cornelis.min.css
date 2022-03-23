@@ -8105,6 +8105,16 @@ body.no-scroll {
   .makkelaar_logo {
     margin-top: 0;
   }
+
+  .overlay .col_left {
+    padding: 50px 30px;
+  }
+  .overlay .col_left .content {
+    max-width: 100%;
+  }
+  .overlay .col_left .content .accordion-header {
+    padding: 20px 30px 20px 15px;
+  }
 }
 @media screen and (max-width: 1025px) and (min-width: 650px) {
   #appartementen .second_row .col_left .wood {
@@ -8153,16 +8163,6 @@ body.no-scroll {
   }
   #contact .col_right p {
     width: 100%;
-  }
-
-  .overlay .col_left {
-    padding: 50px 30px;
-  }
-  .overlay .col_left .content {
-    max-width: 100%;
-  }
-  .overlay .col_left .content .accordion-header {
-    padding: 20px 30px 20px 15px;
   }
 }
 #video_overview {
@@ -9135,6 +9135,16 @@ footer .col_left p {
   .makkelaar_logo {
     margin-top: 0;
   }
+
+  .overlay .col_left {
+    padding: 50px 30px;
+  }
+  .overlay .col_left .content {
+    max-width: 100%;
+  }
+  .overlay .col_left .content .accordion-header {
+    padding: 20px 30px 20px 15px;
+  }
 }
 @media screen and (max-width: 1025px) and (min-width: 650px) {
   #appartementen .second_row .col_left .wood {
@@ -9183,15 +9193,5 @@ footer .col_left p {
   }
   #contact .col_right p {
     width: 100%;
-  }
-
-  .overlay .col_left {
-    padding: 50px 30px;
-  }
-  .overlay .col_left .content {
-    max-width: 100%;
-  }
-  .overlay .col_left .content .accordion-header {
-    padding: 20px 30px 20px 15px;
   }
 }

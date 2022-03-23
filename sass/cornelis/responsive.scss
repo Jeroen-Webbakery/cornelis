@@ -544,9 +544,11 @@
 
   .overlay {
     .col_left {
+      padding: 50px 30px;
+      
       .content {
         max-width: 100%;
-        padding: 50px 30px;
+
 
         .accordion-header {
           padding: 20px 30px 20px 15px;
@@ -555,3 +557,4 @@
     }
   }
 }
+

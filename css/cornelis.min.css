@@ -8155,9 +8155,11 @@ body.no-scroll {
     width: 100%;
   }
 
+  .overlay .col_left {
+    padding: 50px 30px;
+  }
   .overlay .col_left .content {
     max-width: 100%;
-    padding: 50px 30px;
   }
   .overlay .col_left .content .accordion-header {
     padding: 20px 30px 20px 15px;
@@ -9183,9 +9185,11 @@ footer .col_left p {
     width: 100%;
   }
 
+  .overlay .col_left {
+    padding: 50px 30px;
+  }
   .overlay .col_left .content {
     max-width: 100%;
-    padding: 50px 30px;
   }
   .overlay .col_left .content .accordion-header {
     padding: 20px 30px 20px 15px;

@@ -19,10 +19,12 @@ $(document).ready(function () {
 
     $(".downloads, .close_overlay").click(function () {
         $(".overlay").toggleClass("active");
+        $("body, html").toggleClass("no-scroll");
     });
 
     if(window.location.href === "https://cornelis-amsterdam.nl/?downloads") {
         $(".overlay").toggleClass("active");
+        $("body, html").toggleClass("no-scroll");
     }
 
     $(".disclaimer_modal_link").click(function () {

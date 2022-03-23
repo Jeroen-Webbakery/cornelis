@@ -1261,6 +1261,8 @@ body {
 
     .content {
       max-width: 650px;
+      max-height: calc(100vh - 100px);
+      overflow: scroll;
 
       h3 {
         font-size: 55px;

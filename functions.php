@@ -231,3 +231,7 @@ function slug_provide_walker_instance( $args ) {
     return $args;
 }
 add_filter( 'wp_nav_menu_args', 'slug_provide_walker_instance', 1001 );
+
+add_action( 'admin_init', function () {
+    remove_menu_page( 'edit.php' );
+});

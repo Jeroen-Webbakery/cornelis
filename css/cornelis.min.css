@@ -8714,6 +8714,13 @@ footer .col_left p {
 .makkelaar_logo {
   margin-top: 40px;
 }
+.makkelaar_logo img {
+  max-height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 200px;
+  margin-bottom: 50px;
+}
 
 /* Slider */
 .slick-slider {

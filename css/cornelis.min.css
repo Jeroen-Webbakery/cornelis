@@ -8102,16 +8102,15 @@ body.no-scroll {
   footer .col_left {
     margin-bottom: 25px;
   }
+  footer .makkelaar_logo {
+    margin-top: 0;
+  }
+  footer .makkelaar_logo:last-child {
+    margin-top: 50px;
+  }
 
   .bottom_bar .column_left, .bottom_bar .column_right {
     text-align: center;
-  }
-
-  .makkelaar_logo {
-    margin-top: 0;
-  }
-  .makkelaar_logo:last-child {
-    margin-top: 50px;
   }
 
   .overlay .col_left {
@@ -9154,16 +9153,15 @@ footer .col_left p {
   footer .col_left {
     margin-bottom: 25px;
   }
+  footer .makkelaar_logo {
+    margin-top: 0;
+  }
+  footer .makkelaar_logo:last-child {
+    margin-top: 50px;
+  }
 
   .bottom_bar .column_left, .bottom_bar .column_right {
     text-align: center;
-  }
-
-  .makkelaar_logo {
-    margin-top: 0;
-  }
-  .makkelaar_logo:last-child {
-    margin-top: 50px;
   }
 
   .overlay .col_left {

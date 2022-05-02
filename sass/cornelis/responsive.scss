@@ -445,6 +445,14 @@
     .col_left {
       margin-bottom: 25px;
     }
+
+    .makkelaar_logo {
+      margin-top: 0;
+
+      &:last-child {
+        margin-top: 50px;
+      }
+    }
   }
 
   .bottom_bar {
@@ -453,13 +461,7 @@
     }
   }
 
-  .makkelaar_logo {
-    margin-top: 0;
 
-    &:last-child {
-      margin-top: 50px;
-    }
-  }
 
   .overlay {
     .col_left {

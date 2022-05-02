@@ -144,7 +144,7 @@ footer {
   margin-top: 40px;
 
   img {
-    max-height: 100px;
+    max-height: 110px;
     object-fit: contain;
     max-width: 200px;
     margin-bottom: 50px;
@@ -153,6 +153,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+
   .makkelaar_logo {
     img {
       object-position: left;

@@ -8110,6 +8110,9 @@ body.no-scroll {
   .makkelaar_logo {
     margin-top: 0;
   }
+  .makkelaar_logo:last-child {
+    margin-top: 50px;
+  }
 
   .overlay .col_left {
     padding: 50px 30px;
@@ -9158,6 +9161,9 @@ footer .col_left p {
 
   .makkelaar_logo {
     margin-top: 0;
+  }
+  .makkelaar_logo:last-child {
+    margin-top: 50px;
   }
 
   .overlay .col_left {

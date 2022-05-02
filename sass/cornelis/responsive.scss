@@ -455,6 +455,10 @@
 
   .makkelaar_logo {
     margin-top: 0;
+
+    &:last-child {
+      margin-top: 50px;
+    }
   }
 
   .overlay {

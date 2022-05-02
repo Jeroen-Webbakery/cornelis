@@ -550,10 +550,11 @@ get_header();
                 <?php if (have_rows('makelaar')) : ?>
                     <?php while (have_rows('makelaar')) :
                         the_row(); ?>
-                        <div class="col-6 col-md-6 col-lg-2 makelaar mb-5 mb-lg-0">
+                        <div class="col-6 col-md-6 col-lg-3 makelaar mb-5 mb-lg-2">
                             <?= !empty($img = get_sub_field('foto')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'foto']) : '' ?>
                             <p class="name"><?php the_sub_field('naam'); ?></p>
                             <p class="function"><?php the_sub_field('functie'); ?></p>
+                            <p class="company"><?php the_sub_field('company'); ?></p>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>

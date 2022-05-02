@@ -1194,18 +1194,19 @@ body {
   .makelaars_overzicht {
     .makelaar {
       img {
-        height: 150px;
-        width: 150px;
+        height: 300px;
+        width: 100%;
         object-fit: cover;
         margin-bottom: 10px;
       }
 
-      .name, .function {
+      .name, .function, .company {
         font-size: 12px;
         letter-spacing: 0.5px;
         line-height: 12px;
         text-transform: uppercase;
         font-weight: 300;
+        margin-bottom: 7.5px;
       }
     }
   }

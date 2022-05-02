@@ -8721,8 +8721,16 @@ footer .col_left p {
      object-fit: contain;
   max-width: 200px;
   margin-bottom: 50px;
+  -o-object-position: right;
+     object-position: right;
 }
 
+@media (max-width: 768px) {
+  .makkelaar_logo img {
+    -o-object-position: left;
+       object-position: left;
+  }
+}
 /* Slider */
 .slick-slider {
   position: relative;

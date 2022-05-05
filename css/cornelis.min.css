@@ -8730,6 +8730,12 @@ footer .col_left p {
   -o-object-position: right;
      object-position: right;
 }
+@media (max-width: 1799px) and (min-width: 1024px) {
+  .makkelaar_logo img {
+    max-width: 11.1111111111vw;
+    max-height: 6.1111111111vw;
+  }
+}
 
 @media (max-width: 768px) {
   .makkelaar_logo img {

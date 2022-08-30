@@ -78,8 +78,10 @@
             <div class="col-sm-12 col-lg-6 column_left pl-lg-0">
                 <a class="privacy_modal_link modal_link">Privacy</a> <span class="sep mx-2">-</span>
                 <a class="disclaimer_modal_link modal_link">Disclaimer</a>
+
             </div>
             <div class="col-sm-12 col-lg-6 pr-lg-0 column_right d-lg-flex align-items-center justify-content-lg-end">
+                <span class="d-block d-lg-inline-block mr-lg-4">Design by <a href="https://fpw.nl" rel="follow" target="_blank">FPW</a></span>
                 <span>© Cornelis <?php echo get_the_date('Y'); ?>, all rights reserved,</span>
 
             </div>

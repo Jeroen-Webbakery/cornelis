@@ -60,7 +60,7 @@ get_header();
                                     the_row(); ?>
 
                                     <div class="slide">
-                                        <?= !empty($img = get_sub_field('slide_img')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'class_name']) : '' ?>
+                                        <?= !empty($img = get_sub_field('slide_img')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'class_name', 'loading' => 'lazy']) : '' ?>
 
                                     </div>
 
@@ -237,7 +237,7 @@ get_header();
                     <?php endif; ?>
                 </div>
                 <div class="col-sm-12 col-lg-5 offset-lg-1 col_right" data-aos="fade-up">
-                    <?= !empty($img = get_field('g_img_right')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'leaf_image']) : '' ?>
+                    <?= !empty($img = get_field('g_img_right')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'leaf_image', 'loading' => 'lazy']) : '' ?>
 
                 </div>
             </div>
@@ -261,7 +261,7 @@ get_header();
                                 <?php while (have_rows('voorzieningen_slider')) :
                                     the_row(); ?>
 
-                                    <?= !empty($img = get_sub_field('slide_img')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'slide_img']) : '' ?>
+                                    <?= !empty($img = get_sub_field('slide_img')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'slide_img', 'loading' => 'lazy']) : '' ?>
 
                                 <?php endwhile; ?>
                             </div>
@@ -293,7 +293,7 @@ get_header();
                 <div class="col-sm-12 col-lg-10 offset-lg-2">
                     <a href="https://www.google.com/maps/dir//52.3577537,4.8404239/@52.35777,4.838927,16.55z/data=!4m2!4m1!3e0"
                        target="_blank">
-                        <?= !empty($img = get_field('maps')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'maps']) : '' ?>
+                        <?= !empty($img = get_field('maps')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'maps', 'loading' => 'lazy']) : '' ?>
                     </a>
                 </div>
             </div>
@@ -327,7 +327,7 @@ get_header();
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M356.5 235.5C363.6 239.9 368 247.6 368 256C368 264.4 363.6 272.1 356.5 276.5L212.5 364.5C205.1 369 195.8 369.2 188.3 364.9C180.7 360.7 176 352.7 176 344V167.1C176 159.3 180.7 151.3 188.3 147.1C195.8 142.8 205.1 142.1 212.5 147.5L356.5 235.5zM192 168V344C192 346.9 193.6 349.6 196.1 350.1C198.6 352.4 201.7 352.3 204.2 350.8L348.2 262.8C350.6 261.4 352 258.8 352 256C352 253.2 350.6 250.6 348.2 249.2L204.2 161.2C201.7 159.7 198.6 159.6 196.1 161C193.6 162.4 192 165.1 192 168V168zM0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 496C388.5 496 496 388.5 496 256C496 123.5 388.5 16 256 16C123.5 16 16 123.5 16 256C16 388.5 123.5 496 256 496z"/>
                                             </svg>
-                                            <?= !empty($img = get_sub_field('thumbnail')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'thumbnail']) : '' ?>
+                                            <?= !empty($img = get_sub_field('thumbnail')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'thumbnail', 'loading' => 'lazy']) : '' ?>
                                         </div>
                                         <p class="subtitle"><?php the_sub_field('subtitle'); ?></p>
                                         <p class="title"><?php the_sub_field('title'); ?></p>
@@ -375,7 +375,7 @@ get_header();
                             <div class="slide">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6 col-lg-6">
-                                        <?= !empty($img = get_sub_field('slide')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'slide']) : '' ?>
+                                        <?= !empty($img = get_sub_field('slide')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'slide', 'loading' => 'lazy']) : '' ?>
                                     </div>
                                     <div class="col-sm-12 col-md-6 col-lg-6 d-xl-flex justify-content-center ">
                                         <div class="content">
@@ -417,7 +417,7 @@ get_header();
                                             </div>
                                         </div>
                                         <div class="col-sm-12 col-md-6 col-lg-6 px-lg-0">
-                                            <?= !empty($img = get_sub_field('img')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'slide']) : '' ?>
+                                            <?= !empty($img = get_sub_field('img')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'slide', 'loading' => 'lazy']) : '' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -456,7 +456,7 @@ get_header();
             <div class="row">
                 <div class="col-sm-12 col-lg-6 px-lg-0" data-aos="fade-up">
                     <div class="block">
-                        <?= !empty($img = get_field('c_img_left')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'slide']) : '' ?>
+                        <?= !empty($img = get_field('c_img_left')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'slide', 'loading' => 'lazy']) : '' ?>
                         <div class="content">
                             <?php if ($text_over_img = get_field('text_over_img')) : ?>
                                 <?php echo $text_over_img; ?>
@@ -551,7 +551,7 @@ get_header();
                     <?php while (have_rows('makelaar')) :
                         the_row(); ?>
                         <div class="col-6 col-md-6 col-lg-3 makelaar mb-5 mb-lg-2">
-                            <?= !empty($img = get_sub_field('foto')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'foto']) : '' ?>
+                            <?= !empty($img = get_sub_field('foto')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'foto', 'loading' => 'lazy']) : '' ?>
                             <p class="name"><?php the_sub_field('naam'); ?></p>
                             <p class="function"><?php the_sub_field('functie'); ?></p>
                             <p class="company"><?php the_sub_field('company'); ?></p>

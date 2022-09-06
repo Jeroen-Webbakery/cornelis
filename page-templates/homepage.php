@@ -276,6 +276,28 @@ get_header();
         </div>
     </section>
 
+    <section id="energy">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <?= !empty($img = get_field('energy_img')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => '', 'loading' => 'lazy']) : '' ?>
+
+                </div>
+                <div class="col-12 col-lg-4 col_right">
+                    <div class="content">
+                        <h2><?php the_field('energy_title'); ?></h2>
+                        <?php if ($subtitle = get_field('energy_subtitle')) : ?>
+                            <p class="subtitle"><?= $subtitle ?></p>
+                        <?php endif; ?>
+                        <?php the_field('energy_content'); ?>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
     <section id="locatie">
         <div class="wooden_background">
             <div class="container">
@@ -396,7 +418,6 @@ get_header();
             </div>
         </div>
     </section>
-
 
     <section id="actueel">
         <div class="container">

@@ -703,6 +703,66 @@ body {
   }
 }
 
+#energy {
+  background: #F7F7F7;
+  padding: 100px 0;
+
+  @include media-breakpoint-lg() {
+    padding: ratio-vw(100px) 0;
+  }
+
+  .col_right {
+    h2 {
+      font-size: 100px;
+      text-transform: lowercase;
+      letter-spacing: 3.75px;
+      line-height: 70px;
+      margin-bottom: 25px;
+
+      @include media-breakpoint-lg() {
+        font-size: ratio-vw(100px);
+        letter-spacing: ratio-vw(3.75px);
+        line-height: ratio-vw(70px);
+      }
+    }
+
+    .subtitle {
+      text-transform: inherit;
+      font-family: $tertiary;
+      font-size: 32px;
+      letter-spacing: 0;
+      line-height: 38px;
+      margin-bottom: 25px;
+      font-weight: 500;
+
+      @include media-breakpoint-lg() {
+        font-size: ratio-vw(32px);
+        line-height: ratio-vw(38px);
+        margin-bottom: ratio-vw(25px);
+      }
+    }
+
+    @media only screen and (min-width: 1440px) {
+      padding-left: 100px;
+
+      @include media-breakpoint-lg() {
+        padding-left: ratio-vw(100px);
+      }
+      
+      .content {
+        width: 500px;
+
+        @include media-breakpoint-lg() {
+          width: ratio-vw(500px);
+          
+        }
+      }
+    }
+  }
+}
+
+
+
 #locatie {
   .wooden_background {
     position: relative;
@@ -1003,7 +1063,7 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-  #actueel{
+  #actueel {
     &::before {
       display: none;
     }
@@ -1250,7 +1310,7 @@ body {
 
     &:hover {
       background: $green;
-      color: $white!important;
+      color: $white !important;
     }
   }
 

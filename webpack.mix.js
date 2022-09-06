@@ -26,7 +26,7 @@ mix.js('js/cornelis.js', 'js/cornelis.min.js')
 if (mix.inProduction()) {
     mix.setPublicPath(`./`);
     mix.version([
-        'cornelis.min.js',
+        'js/cornelis.min.js',
         'css/cornelis.min.css',
     ]);
 }

@@ -42,16 +42,16 @@ get_header();
 
                 </div>
                 <div class="col-sm-12 col-lg-7 column_right px-0" data-aos="fade-left">
-                    <video class="header_image" playsinline muted autoplay loop>
-                        <source src="<?php echo get_template_directory_uri(); ?>/assets/video/cornelis_header_video.mp4"
+                    <video class="header_image" poster="<?php echo get_template_directory_uri(); ?>/assets/images/cornelis-video-poster.png" playsinline muted autoplay loop>
+                        <source src="<?php echo get_template_directory_uri(); ?>/assets/video/cornelis_header_video_new.mp4"
                                 type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <img class="wood"
-                         src="<?php echo get_template_directory_uri(); ?>/assets/images/wood.jpg"
+                         src="<?php echo get_template_directory_uri(); ?>/assets/images/stroke.jpg"
                          alt="Wood">
                     <img class="leaf"
-                         src="<?php echo get_template_directory_uri(); ?>/assets/images/blad.jpg"
+                         src="<?php echo get_template_directory_uri(); ?>/assets/images/cornelis-bouw.jpg"
                          alt="Leafs">
                     <div class="d-none">
                         <?php if (have_rows('header_slider')) : ?>

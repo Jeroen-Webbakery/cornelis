@@ -142,7 +142,6 @@ body {
 
     .row {
 
-
       .leaf_background {
         position: absolute;
         top: -97px;
@@ -198,10 +197,8 @@ body {
     top: 0;
     height: calc(100vh - 97px);
 
-
     @include media-breakpoint-lg() {
       height: calc(100vh - #{ratio-vw(97px)});
-
     }
 
     .header_image {
@@ -234,7 +231,7 @@ body {
 
     .leaf {
       height: calc(100vh - 97px);
-      width: 200px;
+      width: 300px;
       object-position: center;
       object-fit: cover;
       position: absolute;
@@ -244,7 +241,7 @@ body {
 
       @include media-breakpoint-lg() {
         height: calc(100vh - #{ratio-vw(97px)});
-        width: ratio-vw(200px);
+        width: ratio-vw(300px);
       }
     }
 
@@ -252,14 +249,14 @@ body {
       height: calc(100vh - 97px);
       width: 40px;
       position: absolute;
-      right: 200px;
+      right: 300px;
       top: 0;
       z-index: 99;
 
       @include media-breakpoint-lg() {
         height: calc(100vh - #{ratio-vw(97px)});
         width: ratio-vw(40px);
-        right: ratio-vw(200px);
+        right: ratio-vw(300px);
       }
     }
   }

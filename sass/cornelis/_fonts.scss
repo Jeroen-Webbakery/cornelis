@@ -1,48 +1,55 @@
 @font-face {
-	font-family: 'SF Movie Poster';
-	src: url('../fonts/SF_Movie_Poster_Condensed.ttf') format('truetype');
-	font-weight: 500;
-	font-display: swap;
+  font-family: 'SF Movie Poster';
+  src: url('../fonts/SF_Movie_Poster_Condensed.ttf') format('truetype'),
+  url('../fonts/SF-Movie-Poster-Condensed.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
 }
+
 @font-face {
-	font-family: 'SF Movie Poster';
-	src: url('../fonts/SF-Movie-Poster-Bold2.ttf') format('truetype'),
-		url('../fonts/SF-Movie-Poster-Bold2.otf') format('opentype');
-	font-weight: 700;
-	font-display: swap;
+  font-family: 'SF Movie Poster';
+  src: url('../fonts/SF-Movie-Poster-Bold2.ttf') format('truetype'),
+  url('../fonts/SF-Movie-Poster-Bold2.otf') format('opentype'),
+  url('../fonts/SF-Movie-Poster-Condensed-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
 }
+
 @font-face {
-	font-family: 'Museo Sans';
-	src: url('../fonts/MuseoSans-300.otf') format('opentype');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
+  font-family: 'Museo Sans';
+  src: url('../fonts/MuseoSans-300.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-	font-family: 'Museo Sans';
-	src: url('../fonts/MuseoSans-500.otf') format('opentype');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+  font-family: 'Museo Sans';
+  src: url('../fonts/MuseoSans-500.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-	font-family: 'Museo Sans';
-	src: url('../fonts/MuseoSans-700.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
+  font-family: 'Museo Sans';
+  src: url('../fonts/MuseoSans-700.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-	font-family: 'Minion Pro';
-	src: url('../fonts/Minionpro-regular.otf') format('opentype');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+  font-family: 'Minion Pro';
+  src: url('../fonts/Minionpro-regular.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 
 b, strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 $primary: 'SF Movie Poster', sans-serif;
@@ -56,36 +63,36 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $primary;
-	font-weight: 700;
-	text-transform: lowercase;
+  font-family: $primary;
+  font-weight: 700;
+  text-transform: lowercase;
 
 }
 
-p, li{
-	font-family: $secondary;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	letter-spacing: 0;
-	line-height: 30px;
+p, li {
+  font-family: $secondary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 30px;
 
-	@include media-breakpoint-lg() {
-		font-size: ratio-vw(18px);
-		line-height: ratio-vw(30px);
-	}
+  @include media-breakpoint-lg() {
+    font-size: ratio-vw(18px);
+    line-height: ratio-vw(30px);
+  }
 }
 
 a {
-	text-decoration: none;
-	font-family: $primary;
+  text-decoration: none;
+  font-family: $primary;
 }
 
 
 h1, .h1 {
-	font-size: 50px;
-	letter-spacing: 0;
-	line-height: 61px;
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 61px;
 
   @include media-breakpoint-lg() {
     font-size: ratio-vw(50px);
@@ -113,67 +120,67 @@ h2, .h2 {
 
 @media only screen and (max-width: 1025px) {
 
-	h2, .h2 {
-	  font-size: 36px;
-	  line-height: 44px;
-	}
+  h2, .h2 {
+    font-size: 36px;
+    line-height: 44px;
   }
+}
 
 h3, .h3 {
-	font-size: 40px;
-	letter-spacing: 0;
-	line-height: 59px;
-  
-	@include media-breakpoint-lg() {
-	  font-size: ratio-vw(40px);
-	  line-height: ratio-vw(59px);
-	}
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 59px;
+
+  @include media-breakpoint-lg() {
+    font-size: ratio-vw(40px);
+    line-height: ratio-vw(59px);
   }
+}
 
-  @media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1025px) {
 
-	h3, .h3 {
-	  font-size: 28px;
-	  line-height: 36px;
-	}
+  h3, .h3 {
+    font-size: 28px;
+    line-height: 36px;
   }
+}
 
+
+h4, .h4 {
+  font-size: 30px;
+  line-height: 36px;
+
+  @include media-breakpoint-lg() {
+    font-size: ratio-vw(30px);
+    line-height: ratio-vw(36px);
+  }
+}
+
+
+@media only screen and (max-width: 1025px) {
 
   h4, .h4 {
-	font-size: 30px;
-	line-height: 36px;
-  
-	@include media-breakpoint-lg() {
-	  font-size: ratio-vw(30px);
-	  line-height: ratio-vw(36px);
-	}
+    font-size: 20px;
+    line-height: 26px;
   }
+}
 
 
-  @media only screen and (max-width: 1025px) {
+h5, .h5 {
+  font-size: 26px;
+  line-height: 32px;
 
-	h4, .h4 {
-	  font-size: 20px;
-	  line-height: 26px;
-	}
+  @include media-breakpoint-lg() {
+    font-size: ratio-vw(26px);
+    line-height: ratio-vw(32px);
   }
+}
 
+
+@media only screen and (max-width: 1025px) {
 
   h5, .h5 {
-	font-size: 26px;
-	line-height: 32px;
-  
-	@include media-breakpoint-lg() {
-	  font-size: ratio-vw(26px);
-	  line-height: ratio-vw(32px);
-	}
+    font-size: 18px;
+    line-height: 24px;
   }
-
-
-  @media only screen and (max-width: 1025px) {
-
-	h5, .h5 {
-	  font-size: 18px;
-	  line-height: 24px;
-	}
-  }
+}

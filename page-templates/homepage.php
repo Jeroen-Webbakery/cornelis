@@ -71,7 +71,7 @@ get_header();
                             <a class="next_header_slide"><i class="fas fa-chevron-right"></i></a>
                         </div>
                         <img class="wood"
-                             src="<?php echo get_template_directory_uri(); ?>/assets/images/wood.jpg"
+                             src="<?php echo get_template_directory_uri(); ?>/assets/homepage-assets/wood.jpg"
                              alt="Wood">
                         <img class="leaf"
                              src="<?php echo get_template_directory_uri(); ?>/assets/images/blad.jpg"
